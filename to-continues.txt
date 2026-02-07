@@ -20,24 +20,34 @@ COMPLETED WORK:
   - 4.5-temporary-access-pass: Onboarding, recovery scenarios
   - 4.6-self-service-password-reset: SSPR config, password writeback
   - 4.7-authentication-policies: Auth policies, strengths, migration
+- Lesson 05 (Conditional Access): 8 sub-lessons complete with curved diagrams (5.1-5.8)
+  - 5.1-conditional-access-overview: Zero Trust, signals, evaluation flow
+  - 5.2-policy-components: Assignments, grant controls, session controls
+  - 5.3-named-locations: IP-based, country-based, GPS locations
+  - 5.4-common-policy-scenarios: MFA, block legacy, device compliance, risk-based
+  - 5.5-session-controls: Sign-in frequency, persistent sessions, CAE
+  - 5.6-testing-policies: Report-only mode, What If tool
+  - 5.7-troubleshooting: Sign-in logs, error codes, debugging
+  - 5.8-best-practices: Design principles, naming, lifecycle, Gap Analyzer
 
-TOTAL COMPLETED: 28 sub-lessons across 4 lessons
+TOTAL COMPLETED: 36 sub-lessons across 5 lessons
 
 REMAINING TASKS:
-1. Lesson 05: Conditional Access - NEXT
-2. Lesson 06: Application Integration
-3. Lesson 07: SSO Configuration
-4. Lesson 08: Security & Governance
-5. Lesson 09: Hybrid Identity
-6. Lesson 10: Monitoring & Reporting
+1. Lesson 06: Application Integration - NEXT
+2. Lesson 07: SSO Configuration
+3. Lesson 08: Security & Governance
+4. Lesson 09: Hybrid Identity
+5. Lesson 10: Monitoring & Reporting
 
 DIAGRAM FORMAT REQUIREMENTS:
-All diagrams must use curved lines with this style:
-- Use `curved=1` instead of `edgeStyle=orthogonalEdgeStyle`
-- Add `shadow=1` to the mxGraphModel
-- Use `strokeWidth=3` for connector lines
-- Use `endArrow=blockThin;endFill=1` for arrows
-- Include bezier control points using `<Array as="points">`
+All diagrams must use:
+- Curved lines: `curved=1` (not orthogonalEdgeStyle)
+- Group containers: `rounded=0` (sharp corners for groups)
+- Individual items: `rounded=1` (rounded corners for items inside groups)
+- Shadows: `shadow=1` on mxGraphModel
+- Stroke width: `strokeWidth=2` or `strokeWidth=3` for emphasis
+- Arrows: `endArrow=blockThin;endFill=1`
+- Bezier points: `<Array as="points">` for curves
 
 Example curved arrow:
 ```xml
@@ -48,6 +58,13 @@ Example curved arrow:
       <mxPoint x="450" y="250" />
     </Array>
   </mxGeometry>
+</mxCell>
+```
+
+Example group container (sharp corners):
+```xml
+<mxCell id="group-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+  <mxGeometry x="60" y="80" width="300" height="200" as="geometry" />
 </mxCell>
 ```
 
@@ -64,6 +81,8 @@ Each sub-lesson folder should contain:
    - Title
    - Color-coded sections
    - Curved arrows connecting elements
+   - Sharp corners for group containers
+   - Rounded corners for individual items
    - Shadow effects for depth
    - Clear labels and descriptions
 
@@ -76,24 +95,26 @@ Completed lessons:
 - Lesson 02: Tenant Setup (2.1-2.7) - 7 sub-lessons
 - Lesson 03: User Management (3.1-3.8) - 8 sub-lessons
 - Lesson 04: Authentication Methods (4.1-4.7) - 7 sub-lessons
+- Lesson 05: Conditional Access (5.1-5.8) - 8 sub-lessons
 
-Next: Lesson 05: Conditional Access
+Next: Lesson 06: Application Integration
 
 Instructions:
-1. Read lesson-05-conditional-access/README.md to understand existing content
-2. Plan sub-lessons (5.1, 5.2, etc.) based on content sections
+1. Read lesson-06-application-integration/README.md to understand existing content
+2. Plan sub-lessons (6.1, 6.2, etc.) based on content sections
 3. Create sub-lesson folders with README.md + diagram.drawio
 4. Use curved lines in all diagrams (curved=1)
-5. Update main README.md as overview with sub-lesson links
-6. After Lesson 05, continue with Lessons 06-10
+5. Use sharp corners for groups (rounded=0), rounded for items (rounded=1)
+6. Update main README.md as overview with sub-lesson links
+7. After Lesson 06, continue with Lessons 07-10
 
-Reference lesson-04-authentication for formatting examples.
+Reference lesson-05-conditional-access for formatting examples.
 ---
 
 FILE LOCATIONS:
 - Project root: D:\Programing\document-lesson-ad-entra-x-claude
-- Completed: lesson-01-introduction, lesson-02-tenant-setup, lesson-03-user-management, lesson-04-authentication
-- Remaining: lesson-05-conditional-access, lesson-06-application-integration, lesson-07-sso-configuration, lesson-08-security-governance, lesson-09-hybrid-identity, lesson-10-monitoring-reporting
+- Completed: lesson-01 through lesson-05
+- Remaining: lesson-06-application-integration, lesson-07-sso-configuration, lesson-08-security-governance, lesson-09-hybrid-identity, lesson-10-monitoring-reporting
 - CLAUDE.md contains project guidelines
 
 NOTES:
@@ -101,4 +122,6 @@ NOTES:
 - Diagrams should visualize concepts, not just decorate
 - PowerShell examples should use Microsoft Graph SDK
 - Keep content practical and implementation-focused
-- All 28 completed sub-lessons have curved arrow diagrams
+- All 36 completed sub-lessons have curved arrow diagrams
+- Group containers use sharp corners (rounded=0)
+- Individual items use rounded corners (rounded=1)

@@ -1,0 +1,190 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Named Locations" id="named-locations-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Named Locations Configuration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- IP-Based Locations -->
+        <mxCell id="ip-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ip-header" value="IP-Based Locations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="350" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ip-corp" value="Corporate-HQ&#xa;203.0.113.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="125" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ip-branch" value="Branch-Office&#xa;198.51.100.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="125" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ip-vpn" value="VPN-Endpoints&#xa;192.0.2.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="125" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ip-trusted" value="Mark as Trusted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="185" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ip-cidr" value="IPv4 &amp; IPv6 CIDR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="185" width="100" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ip-note" value="Use for: Corporate networks, VPN exit points, partner networks" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#6c8ebf;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="235" width="310" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Country-Based Locations -->
+        <mxCell id="country-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="80" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="country-header" value="Country-Based Locations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="80" width="350" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="country-allow" value="Allowed Countries&#xa;US, UK, Canada, Germany" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#006400;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="450" y="125" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="country-block" value="Blocked Countries&#xa;High-risk regions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="610" y="125" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="country-method" value="Detection: Geo-IP or GPS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="190" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="country-unknown" value="Handle Unknown Locations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="190" width="140" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="country-note" value="Use for: Geographic restrictions, compliance requirements" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#82b366;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="450" y="235" width="310" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- GPS Locations -->
+        <mxCell id="gps-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="80" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gps-header" value="GPS Verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="80" width="180" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gps1" value="High Accuracy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="125" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gps2" value="Prevent VPN Spoofing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="165" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gps3" value="Mobile Device Support" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="205" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Policy Usage Flow -->
+        <mxCell id="flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="920" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-header" value="Using Named Locations in Conditional Access Policies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="920" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fl1" value="User&#xa;Sign-In" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fl2" value="Detect&#xa;Location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="360" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fl3" value="Match Named&#xa;Locations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="360" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fl4" value="Apply Policy&#xa;Conditions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="90" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Decision outcomes -->
+        <mxCell id="fl5a" value="Trusted&#xa;Location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="355" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fl5b" value="Blocked&#xa;Location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="395" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fl6a" value="Skip MFA /&#xa;Allow Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="355" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="fl6b" value="Block /&#xa;Require MFA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="395" width="100" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Arrows -->
+        <mxCell id="fla1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="fl1" target="fl2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="190" y="385" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="fl2" target="fl3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="310" y="385" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="fl3" target="fl4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="440" y="385" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla4" style="endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="375" as="sourcePoint" />
+            <mxPoint x="595" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla5" style="endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="410" as="sourcePoint" />
+            <mxPoint x="595" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla6" style="endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="372" as="sourcePoint" />
+            <mxPoint x="715" y="372" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fla7" style="endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="412" as="sourcePoint" />
+            <mxPoint x="715" y="412" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Common Patterns -->
+        <mxCell id="patterns-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="patterns-header" value="Common Location Patterns" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="920" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pat1" value="Skip MFA on&#xa;Corporate Network" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="525" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pat2" value="Block High-Risk&#xa;Countries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="525" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pat3" value="Require Compliance&#xa;Outside Office" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="525" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pat4" value="Allow Only&#xa;Operating Countries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="525" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pat5" value="GPS Verify&#xa;Sensitive Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="525" width="120" height="40" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
