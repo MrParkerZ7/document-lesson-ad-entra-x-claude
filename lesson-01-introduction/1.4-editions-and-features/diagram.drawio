@@ -1,0 +1,201 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Editions and Features" id="editions-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Microsoft Entra ID - Editions Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Free Edition -->
+        <mxCell id="free-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="300" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="free-header" value="FREE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="free-price" value="$0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="125" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="free-desc" value="Included with Microsoft cloud services" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="free-f1" value="✅ User &amp; Group Management" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f2" value="✅ SSO for SaaS Apps" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="205" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f3" value="✅ MFA (Security Defaults)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="230" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f4" value="✅ B2B Collaboration" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="255" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f5" value="✅ Azure AD Connect" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f6" value="✅ Self-Service Password Change" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="305" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f7" value="❌ Conditional Access" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f8" value="❌ Self-Service Password Reset" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="365" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f9" value="❌ Dynamic Groups" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f10" value="❌ Identity Protection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="415" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="free-f11" value="❌ PIM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="440" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="free-use" value="Best for: Small organizations,&#xa;basic cloud identity needs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="520" width="260" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- P1 Edition -->
+        <mxCell id="p1-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="300" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-header" value="PREMIUM P1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-price" value="~$6/user/month" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="125" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-desc" value="Included in M365 E3, EMS E3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="150" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1-f1" value="✅ All Free Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="180" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f2" value="✅ Conditional Access" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="205" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f3" value="✅ Self-Service Password Reset" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="230" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f4" value="✅ Dynamic Groups" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="255" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f5" value="✅ Group-Based Licensing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="280" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f6" value="✅ Application Proxy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="305" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f7" value="✅ Advanced Audit Logs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="330" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f8" value="✅ 99.9% SLA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="410" y="355" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f9" value="❌ Identity Protection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="410" y="390" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f10" value="❌ PIM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="410" y="415" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-f11" value="❌ Access Reviews" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="410" y="440" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1-use" value="Best for: Enterprise orgs needing&#xa;Conditional Access &amp; self-service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="520" width="260" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- P2 Edition -->
+        <mxCell id="p2-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="80" width="300" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-header" value="PREMIUM P2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="80" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-badge" value="RECOMMENDED" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="60" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-price" value="~$9/user/month" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="750" y="125" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-desc" value="Included in M365 E5, EMS E5" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="750" y="150" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-f1" value="✅ All P1 Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="180" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f2" value="✅ Identity Protection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#107C10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="205" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f2a" value="     • User risk detection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="225" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f2b" value="     • Sign-in risk detection" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="245" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f3" value="✅ Privileged Identity Management" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#107C10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="270" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f3a" value="     • Just-in-time admin access" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="290" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f3b" value="     • Approval workflows" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="310" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f4" value="✅ Access Reviews" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#107C10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="335" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f4a" value="     • Periodic recertification" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="355" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f5" value="✅ Entitlement Management" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#107C10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="380" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f5a" value="     • Access packages" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=20;fontColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="400" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-f6" value="✅ Risk-Based Conditional Access" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;spacingLeft=20;fontColor=#107C10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="430" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-use" value="Best for: High-security orgs,&#xa;compliance requirements, governance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="520" width="260" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Bundles Info -->
+        <mxCell id="bundles" value="📦 License Bundles: M365 E3 includes P1 | M365 E5 includes P2 | EMS E3 includes P1 | EMS E5 includes P2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="620" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Curved arrow progression -->
+        <mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="free-box" target="p1-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="300" />
+              <mxPoint x="380" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="p1-box" target="p2-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="300" />
+              <mxPoint x="730" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

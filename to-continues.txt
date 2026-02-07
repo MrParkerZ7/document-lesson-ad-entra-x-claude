@@ -1,0 +1,93 @@
+CONTINUATION PROMPT FOR MICROSOFT ENTRA ID DOCUMENTATION PROJECT
+================================================================
+
+PROJECT CONTEXT:
+- This is a documentation-only repository for Microsoft Entra ID (Azure AD) lessons
+- Target audience: All levels (beginner to advanced)
+- Language: English
+- Structure: Lessons separated into sub-lesson folders (numbered X.1, X.2, X.3...)
+- Each sub-lesson contains: README.md + diagram.drawio
+
+COMPLETED WORK:
+- Lesson 01 (Introduction): 6 sub-lessons complete with curved diagrams
+- Lesson 02 (Tenant Setup): 7 sub-lessons complete with curved diagrams
+- Lesson 03 (User Management): 8 sub-lessons complete with curved diagrams
+
+REMAINING TASKS:
+Continue restructuring the following lessons into sub-lessons with README.md and diagram.drawio files:
+
+1. Lesson 04: Authentication Methods
+2. Lesson 05: Conditional Access
+3. Lesson 06: Application Integration
+4. Lesson 07: SSO Configuration
+5. Lesson 08: Security & Governance
+6. Lesson 09: Hybrid Identity
+7. Lesson 10: Monitoring & Reporting
+
+DIAGRAM FORMAT REQUIREMENTS:
+All diagrams must use curved lines with this style:
+- Use `curved=1` instead of `edgeStyle=orthogonalEdgeStyle`
+- Add `shadow=1` to the mxGraphModel
+- Use `strokeWidth=3` for connector lines
+- Use `endArrow=blockThin;endFill=1` for arrows
+- Include bezier control points using `<Array as="points">`
+
+Example curved arrow:
+```xml
+<mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="source-id" target="target-id">
+  <mxGeometry relative="1" as="geometry">
+    <Array as="points">
+      <mxPoint x="400" y="200" />
+      <mxPoint x="450" y="250" />
+    </Array>
+  </mxGeometry>
+</mxCell>
+```
+
+SUB-LESSON STRUCTURE:
+Each sub-lesson folder should contain:
+1. README.md - Detailed content with:
+   - Overview
+   - Learning Objectives
+   - Main content with tables, code examples, PowerShell commands
+   - Key Takeaways
+   - Navigation to next sub-lesson
+
+2. diagram.drawio - Visual diagram with:
+   - Title
+   - Color-coded sections
+   - Curved arrows connecting elements
+   - Shadow effects for depth
+   - Clear labels and descriptions
+
+PROMPT TO CONTINUE:
+---
+Please continue restructuring the Microsoft Entra ID documentation lessons.
+
+The following lessons are complete:
+- Lesson 01: Introduction (1.1-1.6)
+- Lesson 02: Tenant Setup (2.1-2.7)
+- Lesson 03: User Management (3.1-3.8)
+
+Please continue with Lesson 04: Authentication Methods. Read the existing lesson-04-authentication/README.md file to understand the content, then restructure it into sub-lessons (4.1, 4.2, etc.) with individual README.md and diagram.drawio files.
+
+Requirements:
+- Create sub-lesson folders numbered 4.1-4.X
+- Each folder needs README.md + diagram.drawio
+- Use curved lines in all diagrams (curved=1, not orthogonalEdgeStyle)
+- Update the main lesson-04-authentication/README.md as an overview with links to sub-lessons
+- After completing Lesson 04, continue with Lessons 05-10
+
+Reference the existing structure in lesson-01, lesson-02, or lesson-03 for formatting examples.
+---
+
+FILE LOCATIONS:
+- Project root: D:\Programing\document-lesson-ad-entra-x-claude
+- Lessons: lesson-01-introduction, lesson-02-tenant-setup, lesson-03-user-management, etc.
+- CLAUDE.md contains project guidelines
+
+NOTES:
+- Each lesson covers different aspects of Microsoft Entra ID
+- Diagrams should visualize concepts, not just decorate
+- PowerShell examples should use Microsoft Graph SDK
+- Keep content practical and implementation-focused

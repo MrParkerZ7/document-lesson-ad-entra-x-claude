@@ -1,0 +1,173 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Dynamic Groups" id="dynamic-groups-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Dynamic Groups - Automatic Membership" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Users Section -->
+        <mxCell id="users-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="users-header" value="👥 All Users in Directory" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Sample Users -->
+        <mxCell id="user1" value="👤 John Smith&#xa;Dept: Sales&#xa;Country: US" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user2" value="👤 Sarah Lee&#xa;Dept: Sales&#xa;Country: US" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user3" value="👤 Mike Chen&#xa;Dept: IT&#xa;Country: US" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user4" value="👤 Lisa Brown&#xa;Dept: Sales&#xa;Country: CA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="user5" value="👤 Bob Jones&#xa;Dept: HR&#xa;Country: UK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Rule Engine -->
+        <mxCell id="engine-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="engine-header" value="⚙️ Dynamic Membership Rule Engine" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="320" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="440" y="190" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-title" value="📋 Membership Rule:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d79b00;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="440" y="195" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-code" value="(user.department -eq &quot;Sales&quot;)&#xa;-and&#xa;(user.country -eq &quot;US&quot;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="260" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eval-title" value="🔍 Evaluation Result:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d79b00;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="440" y="285" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eval-match" value="✅ John Smith - MATCH" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="440" y="305" width="130" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="eval-match2" value="✅ Sarah Lee - MATCH" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="440" y="323" width="130" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="eval-nomatch1" value="❌ Mike Chen - NO (IT)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#b85450;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="580" y="305" width="130" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="eval-nomatch2" value="❌ Lisa Brown - NO (CA)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#b85450;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="580" y="323" width="130" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- Dynamic Group Result -->
+        <mxCell id="group-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="100" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="group-header" value="👥 GRP-DYN-US-Sales" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="100" width="300" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="group-type" value="Type: Dynamic User Group" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="800" y="140" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="member1" value="✅ John Smith&#xa;Sales | US" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="180" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="member2" value="✅ Sarah Lee&#xa;Sales | US" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="250" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="auto-badge" value="⚡ Auto-populated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="320" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="group-note" value="New matching users&#xa;automatically added!" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="830" y="360" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="users-box" target="engine-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="230" />
+              <mxPoint x="390" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow1-label" value="Evaluate&#xa;all users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="370" y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="engine-box" target="group-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="230" />
+              <mxPoint x="770" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2-label" value="Add&#xa;matches" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="755" y="180" width="45" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Common Rules Section -->
+        <mxCell id="rules-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="440" width="1040" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rules-header" value="📋 Common Dynamic Membership Rules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="440" width="1040" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-ex1" value="Department" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="490" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-ex1-code" value="(user.department -eq &quot;IT&quot;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="90" y="535" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-ex2" value="Job Title Contains" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="490" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-ex2-code" value="(user.jobTitle -contains &quot;Manager&quot;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="290" y="535" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-ex3" value="Multiple Countries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="490" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-ex3-code" value="(user.country -in [&quot;US&quot;,&quot;CA&quot;])" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="490" y="535" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-ex4" value="Members Only" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="490" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-ex4-code" value="(user.userType -eq &quot;Member&quot;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="690" y="535" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rule-ex5" value="Extension Attribute" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="490" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-ex5-code" value="(user.extensionAttribute1 -eq &quot;VIP&quot;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="890" y="535" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="combine-note" value="💡 Combine with -and / -or for complex rules" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="565" width="320" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Group-Based Licensing" id="group-licensing-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Group-Based Licensing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- License Pool -->
+        <mxCell id="license-pool" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="license-header" value="📦 License Pool" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="200" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="lic1" value="🏢 M365 E3&#xa;100 available" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="150" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lic2" value="🏢 M365 E5&#xa;25 available" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="210" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lic3" value="💻 Visual Studio&#xa;50 available" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="270" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- License Groups -->
+        <mxCell id="groups-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="groups-header" value="👥 License Groups" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="280" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="grp1" value="GRP-LICENSE-M365-E3&#xa;📋 License: M365 E3&#xa;⚡ Type: Dynamic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="150" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="grp2" value="GRP-LICENSE-M365-E5&#xa;📋 License: M365 E5&#xa;⚡ Type: Dynamic (Executives)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="210" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="grp3" value="GRP-LICENSE-VisualStudio&#xa;📋 License: VS Professional&#xa;⚡ Type: Dynamic (Developers)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="270" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Users -->
+        <mxCell id="users-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="users-header" value="👤 Users (Auto-Licensed)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="220" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user1" value="John Smith&#xa;✅ M365 E3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="150" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="user2" value="Sarah Lee&#xa;✅ M365 E3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="150" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="user3" value="Mike CEO&#xa;✅ M365 E5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="user4" value="Dev Alice&#xa;✅ M365 E3&#xa;✅ VS Pro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="80" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="license-pool" target="groups-section">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="190" />
+              <mxPoint x="290" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow1-label" value="Assign&#xa;to groups" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="270" y="155" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="groups-section" target="users-section">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="190" />
+              <mxPoint x="660" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2-label" value="Auto&#xa;assign" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="645" y="155" width="40" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Workflow Section -->
+        <mxCell id="workflow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="860" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="workflow-header" value="⚡ Automatic License Assignment Workflow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="860" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1" value="👤 New User&#xa;Hired" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="425" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" value="📋 Matches&#xa;Dynamic Rule" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="425" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" value="👥 Added to&#xa;License Group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="425" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step4" value="📦 License&#xa;Auto-Assigned" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="425" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" value="✅ User Ready&#xa;to Work" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="425" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Workflow arrows -->
+        <mxCell id="w-arrow1" style="endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="450" as="sourcePoint" />
+            <mxPoint x="245" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow2" style="endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="450" as="sourcePoint" />
+            <mxPoint x="405" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow3" style="endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="450" as="sourcePoint" />
+            <mxPoint x="565" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow4" style="endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="450" as="sourcePoint" />
+            <mxPoint x="725" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Error Handling -->
+        <mxCell id="error-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="860" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="error-header" value="⚠️ Common License Errors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="860" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="err1" value="❌ NotEnoughLicenses&#xa;Purchase more licenses" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="565" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err2" value="❌ MissingUsageLocation&#xa;Set user's usage location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="565" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err3" value="❌ ConflictingPlans&#xa;Remove conflicting license" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="565" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err4" value="❌ DependencyViolation&#xa;Add prerequisite license" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="565" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err5" value="❌ ProhibitedLocation&#xa;License unavailable in region" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="565" width="140" height="45" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

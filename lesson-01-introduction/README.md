@@ -4,209 +4,99 @@
 
 Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based identity and access management service. It helps organizations manage user identities and control access to applications, resources, and data.
 
+This lesson introduces the fundamental concepts of Microsoft Entra ID, preparing you for deeper dives in subsequent lessons.
+
+---
+
+## Sub-Lessons
+
+| # | Sub-Lesson | Description |
+|---|------------|-------------|
+| 1.1 | [What is Microsoft Entra ID?](./1.1-what-is-entra-id/README.md) | Core concepts, IDaaS, and capabilities |
+| 1.2 | [Key Terminology](./1.2-key-terminology/README.md) | Essential terms and identity object types |
+| 1.3 | [Entra ID vs On-Premises AD](./1.3-entra-id-vs-onprem-ad/README.md) | Comparing cloud and on-premises identity |
+| 1.4 | [Editions and Features](./1.4-editions-and-features/README.md) | Free, P1, P2 feature comparison |
+| 1.5 | [Architecture Overview](./1.5-architecture-overview/README.md) | Components, data flow, and security layers |
+| 1.6 | [Use Cases in Organizations](./1.6-use-cases/README.md) | Common implementation scenarios |
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will:
-- Understand what Microsoft Entra ID is and its purpose
-- Learn key terminology and concepts
-- Understand the difference between on-premises AD and Entra ID
-- Know the different Entra ID editions and their features
+
+- ✅ Understand what Microsoft Entra ID is and its purpose
+- ✅ Learn key terminology and concepts
+- ✅ Understand the difference between on-premises AD and Entra ID
+- ✅ Know the different Entra ID editions and their features
+- ✅ Understand the architecture and components
+- ✅ Identify common organizational use cases
 
 ---
 
-## 1. What is Microsoft Entra ID?
+## Diagrams
 
-Microsoft Entra ID is a cloud-based **Identity as a Service (IDaaS)** solution that provides:
-
-- **Authentication**: Verifying who users are
-- **Authorization**: Controlling what users can access
-- **Identity Management**: Managing user lifecycle
-- **Access Control**: Enforcing security policies
-
-### Key Capabilities
-
-| Capability | Description |
-|------------|-------------|
-| Single Sign-On (SSO) | One login for multiple applications |
-| Multi-Factor Authentication (MFA) | Additional security verification |
-| Conditional Access | Context-based access policies |
-| B2B Collaboration | External user access |
-| B2C Identity | Customer identity management |
-| Device Management | Managing organizational devices |
+Each sub-lesson includes a `.drawio` diagram file that can be opened with:
+- [diagrams.net](https://app.diagrams.net/) (web-based)
+- VS Code with Draw.io Integration extension
+- Desktop Draw.io application
 
 ---
 
-## 2. Key Terminology
+## Quick Reference
 
-### Core Concepts
+### What is Entra ID?
+
+A cloud-based Identity as a Service (IDaaS) providing:
+- **Authentication** - Verify user identities
+- **Authorization** - Control resource access
+- **Identity Management** - User lifecycle management
+- **Access Control** - Policy enforcement
+
+### Key Terms
 
 | Term | Definition |
 |------|------------|
-| **Tenant** | A dedicated instance of Entra ID for your organization |
-| **Directory** | The container for all identity objects (users, groups, apps) |
-| **Identity** | An object that can be authenticated (user, application, service) |
-| **Principal** | An identity with assigned permissions |
-| **Service Principal** | An identity for applications/services |
+| **Tenant** | Your organization's Entra ID instance |
+| **Directory** | Database of identity objects |
+| **Identity** | Object that can authenticate |
+| **Principal** | Identity with permissions |
 
-### Identity Objects
+### Editions
 
-```
-Tenant (Organization)
-├── Users
-│   ├── Members (internal users)
-│   └── Guests (external users)
-├── Groups
-│   ├── Security Groups
-│   └── Microsoft 365 Groups
-├── Applications
-│   ├── Enterprise Applications
-│   └── App Registrations
-└── Devices
-    ├── Entra ID Joined
-    ├── Entra ID Registered
-    └── Hybrid Joined
-```
+| Edition | Key Features |
+|---------|--------------|
+| Free | Basic SSO, MFA (Security Defaults) |
+| P1 | Conditional Access, SSPR, Dynamic Groups |
+| P2 | Identity Protection, PIM, Access Reviews |
 
 ---
 
-## 3. Entra ID vs. On-Premises Active Directory
+## Getting Started Checklist
 
-| Aspect | On-Premises AD | Microsoft Entra ID |
-|--------|----------------|-------------------|
-| **Location** | On-premises servers | Cloud-based |
-| **Protocol** | LDAP, Kerberos, NTLM | OAuth 2.0, OpenID Connect, SAML |
-| **Structure** | Domains, Forests, OUs | Flat structure, no OUs |
-| **Management** | Group Policy Objects | Conditional Access, Intune |
-| **Authentication** | Network-based | Internet-based |
-| **Scalability** | Hardware dependent | Automatically scales |
-
-### When to Use Each
-
-- **On-Premises AD**: Legacy applications, Windows-based infrastructure
-- **Entra ID**: Cloud applications, modern authentication, remote workforce
-- **Hybrid**: Combination of both for gradual migration
-
----
-
-## 4. Microsoft Entra ID Editions
-
-### Free
-- Basic user and group management
-- On-premises directory synchronization
-- Basic reports
-- Self-service password change for cloud users
-
-### Microsoft Entra ID P1
-- Everything in Free, plus:
-- Self-service password reset
-- Conditional Access
-- Dynamic groups
-- Group-based licensing
-- Microsoft Identity Manager
-
-### Microsoft Entra ID P2
-- Everything in P1, plus:
-- Identity Protection (risk-based policies)
-- Privileged Identity Management (PIM)
-- Access Reviews
-- Entitlement Management
-
-### Comparison Table
-
-| Feature | Free | P1 | P2 |
-|---------|------|----|----|
-| User/Group Management | ✅ | ✅ | ✅ |
-| SSO (unlimited apps) | ✅ | ✅ | ✅ |
-| MFA | ✅ | ✅ | ✅ |
-| Self-Service Password Reset | ❌ | ✅ | ✅ |
-| Conditional Access | ❌ | ✅ | ✅ |
-| Dynamic Groups | ❌ | ✅ | ✅ |
-| Identity Protection | ❌ | ❌ | ✅ |
-| Privileged Identity Management | ❌ | ❌ | ✅ |
-| Access Reviews | ❌ | ❌ | ✅ |
-
----
-
-## 5. Architecture Overview
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Microsoft Entra ID                        │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   Users     │  │   Groups    │  │    Apps     │         │
-│  └─────────────┘  └─────────────┘  └─────────────┘         │
-│                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              Authentication Services                 │   │
-│  │  • OAuth 2.0  • OpenID Connect  • SAML  • WS-Fed    │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              Security & Governance                   │   │
-│  │  • Conditional Access  • MFA  • Identity Protection │   │
-│  └─────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-                              │
-        ┌─────────────────────┼─────────────────────┐
-        ▼                     ▼                     ▼
-┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-│  Cloud Apps   │   │  On-Premises  │   │    Devices    │
-│  (SaaS)       │   │  Apps         │   │               │
-└───────────────┘   └───────────────┘   └───────────────┘
-```
-
----
-
-## 6. Common Use Cases in Organizations
-
-### 1. Centralized Identity Management
-- Single source of truth for all user identities
-- Automated user provisioning and deprovisioning
-- Self-service capabilities for users
-
-### 2. Secure Application Access
-- SSO for all cloud and on-premises applications
-- MFA enforcement for sensitive resources
-- Conditional Access based on risk
-
-### 3. External Collaboration
-- B2B collaboration with partners
-- Guest user access with appropriate restrictions
-- Secure sharing without creating separate accounts
-
-### 4. Compliance and Governance
-- Access reviews and certifications
-- Audit logs and reporting
-- Regulatory compliance support
-
----
-
-## 7. Getting Started Checklist
-
-- [ ] Understand your organization's identity requirements
-- [ ] Evaluate current infrastructure (cloud-only vs. hybrid)
-- [ ] Choose the appropriate Entra ID edition
-- [ ] Plan your tenant structure
-- [ ] Define naming conventions
-- [ ] Plan user and group management strategy
-- [ ] Identify applications to integrate
+- [ ] Complete all 6 sub-lessons
+- [ ] Review the diagrams for visual understanding
+- [ ] Identify which edition your organization needs
+- [ ] Consider your hybrid vs cloud-only strategy
 
 ---
 
 ## Summary
 
-Microsoft Entra ID is a comprehensive identity platform that enables:
-- Secure authentication and authorization
-- Centralized identity management
-- Modern access control policies
-- Seamless integration with cloud and on-premises resources
+Microsoft Entra ID is the foundation for modern identity management:
+
+- Cloud-based, globally distributed
+- Supports multiple authentication protocols
+- Integrates with thousands of applications
+- Provides comprehensive security and governance
 
 ---
 
-## Next Lesson
+## Navigation
 
-[Lesson 02: Tenant Setup and Configuration →](../lesson-02-tenant-setup/README.md)
+| Previous | Next |
+|----------|------|
+| [Course Overview](../README.md) | [Lesson 02: Tenant Setup →](../lesson-02-tenant-setup/README.md) |
 
 ---
 

@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Creating Users" id="creating-users-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="User Creation Methods in Microsoft Entra ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Central Entra ID -->
+        <mxCell id="entra-center" value="Microsoft&#xa;Entra ID&#xa;👥 Users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="140" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Method 1: Portal -->
+        <mxCell id="portal-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-header" value="🌐 Azure Portal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="220" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-scale" value="Scale: 1-10 users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-step1" value="1️⃣ Navigate to Users" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="165" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-step2" value="2️⃣ Click New User" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="185" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-step3" value="3️⃣ Fill in details" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="205" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-step4" value="4️⃣ Create user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="225" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-best" value="✅ Best for: Quick single users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="95" y="250" width="190" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Portal to Center -->
+        <mxCell id="portal-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0;shadow=0;" edge="1" parent="1" source="portal-box" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="220" />
+              <mxPoint x="450" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Method 2: PowerShell -->
+        <mxCell id="ps-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-header" value="⚡ PowerShell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="220" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-scale" value="Scale: 10-100+ users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-step1" value="1️⃣ Connect-MgGraph" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="485" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-step2" value="2️⃣ Define parameters" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="505" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-step3" value="3️⃣ New-MgUser" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="525" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-step4" value="4️⃣ Loop for multiple" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="545" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ps-best" value="✅ Best for: Automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="95" y="570" width="190" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from PowerShell to Center -->
+        <mxCell id="ps-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=1;shadow=0;" edge="1" parent="1" source="ps-box" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="480" />
+              <mxPoint x="450" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Method 3: Bulk CSV -->
+        <mxCell id="bulk-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="100" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-header" value="📄 Bulk CSV Import" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="100" width="220" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-scale" value="Scale: 100+ users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="840" y="140" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-step1" value="1️⃣ Download template" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="165" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-step2" value="2️⃣ Fill CSV data" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="185" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-step3" value="3️⃣ Upload file" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="205" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-step4" value="4️⃣ Execute import" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="225" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bulk-best" value="✅ Best for: Mass provisioning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="855" y="250" width="190" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Bulk to Center -->
+        <mxCell id="bulk-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d79b00;strokeWidth=3;exitX=0;exitY=0.5;entryX=1;entryY=0;shadow=0;" edge="1" parent="1" source="bulk-box" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="220" />
+              <mxPoint x="700" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Method 4: Azure AD Connect -->
+        <mxCell id="sync-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="420" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-header" value="🔄 Azure AD Connect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="420" width="220" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-scale" value="Scale: Enterprise" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="840" y="460" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-step1" value="1️⃣ Install on-prem server" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="485" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-step2" value="2️⃣ Configure sync rules" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="505" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-step3" value="3️⃣ Initial sync" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="525" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-step4" value="4️⃣ Automatic sync cycle" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="545" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-best" value="✅ Best for: Hybrid identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="855" y="570" width="190" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Sync to Center -->
+        <mxCell id="sync-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=3;exitX=0;exitY=0.5;entryX=1;entryY=1;shadow=0;" edge="1" parent="1" source="sync-box" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="480" />
+              <mxPoint x="700" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Required Fields Box -->
+        <mxCell id="required-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="required-title" value="📋 Required Fields for User Creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="485" width="340" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="req1" value="• User Principal Name (UPN)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="410" y="515" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="req2" value="• Display Name" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="410" y="535" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="req3" value="• Password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="410" y="555" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="opt1" value="• Usage Location *" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=20;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="515" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="opt2" value="• Account Enabled" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="570" y="535" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="opt-note" value="* Required for licensing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;spacingLeft=20;fontStyle=2;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="560" width="160" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

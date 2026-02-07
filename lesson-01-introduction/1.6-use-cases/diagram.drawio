@@ -1,0 +1,213 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Use Cases" id="use-cases-diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Microsoft Entra ID - Common Use Cases" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Central Entra ID -->
+        <mxCell id="entra-center" value="Microsoft&#xa;Entra ID" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=18;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Use Case 1: Centralized Identity -->
+        <mxCell id="uc1" value="🏢 Centralized&#xa;Identity Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1-desc" value="Single source of truth&#xa;for all identities" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="180" y="170" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc1" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="200" />
+              <mxPoint x="500" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 2: SSO -->
+        <mxCell id="uc2" value="🔐 Single Sign-On&#xa;(SSO)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2-desc" value="One login for&#xa;all applications" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc2" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="220" />
+              <mxPoint x="600" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 3: Remote Workforce -->
+        <mxCell id="uc3" value="🌍 Secure Remote&#xa;Workforce" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3-desc" value="Zero Trust for&#xa;remote access" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="820" y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d79b00;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc3" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="220" />
+              <mxPoint x="800" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 4: B2B -->
+        <mxCell id="uc4" value="🤝 Partner/Vendor&#xa;Collaboration (B2B)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="100" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4-desc" value="External access&#xa;with guest users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="170" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc4" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="250" />
+              <mxPoint x="900" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 5: Compliance -->
+        <mxCell id="uc5" value="📋 Regulatory&#xa;Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="310" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5-desc" value="Access reviews,&#xa;audit logs, governance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="380" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc5" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="380" />
+              <mxPoint x="880" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 6: PIM -->
+        <mxCell id="uc6" value="⏱️ Privileged Access&#xa;Management (PIM)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="520" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6-desc" value="Just-in-time&#xa;admin access" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="590" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d6b656;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc6" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="530" />
+              <mxPoint x="880" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 7: App Modernization -->
+        <mxCell id="uc7" value="🔄 Application&#xa;Modernization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="700" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7-desc" value="Modern auth&#xa;for legacy apps" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="770" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc7" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="680" />
+              <mxPoint x="850" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 8: M&A -->
+        <mxCell id="uc8" value="🏗️ Mergers &amp;&#xa;Acquisitions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="720" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8-desc" value="Identity integration&#xa;across organizations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="820" y="790" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc8" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="650" />
+              <mxPoint x="750" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 9: B2C -->
+        <mxCell id="uc9" value="👥 Customer Identity&#xa;(B2C)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="720" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc9-desc" value="Consumer app&#xa;identity management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="420" y="790" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc9-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d79b00;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc9" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="650" />
+              <mxPoint x="620" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Use Case 10: Device Management -->
+        <mxCell id="uc10" value="💻 Device&#xa;Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="700" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc10-desc" value="Device identity&#xa;and compliance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="180" y="770" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc10-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc10" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="650" />
+              <mxPoint x="500" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Hybrid Identity -->
+        <mxCell id="uc11" value="🔗 Hybrid&#xa;Identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="520" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc11-desc" value="Connect on-prem AD&#xa;with cloud" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="140" y="590" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc11-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc11" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="530" />
+              <mxPoint x="500" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Conditional Access -->
+        <mxCell id="uc12" value="🛡️ Zero Trust&#xa;Security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="310" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc12-desc" value="Conditional Access&#xa;policies" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="140" y="380" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc12-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d6b656;strokeWidth=3;shadow=0;" edge="1" parent="1" source="uc12" target="entra-center">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="380" />
+              <mxPoint x="500" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
