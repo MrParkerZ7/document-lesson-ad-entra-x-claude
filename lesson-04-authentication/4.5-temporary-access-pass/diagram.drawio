@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- What is TAP -->
-        <mxCell id="what-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="what-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="80" width="250" height="180" as="geometry" />
         </mxCell>
         <mxCell id="what-header" value="What is TAP?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -32,7 +32,7 @@
         </mxCell>
 
         <!-- Use Cases -->
-        <mxCell id="use-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="use-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="80" width="250" height="180" as="geometry" />
         </mxCell>
         <mxCell id="use-header" value="Use Cases" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -53,7 +53,7 @@
         </mxCell>
 
         <!-- TAP Settings -->
-        <mxCell id="settings-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="settings-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="600" y="80" width="300" height="180" as="geometry" />
         </mxCell>
         <mxCell id="settings-header" value="TAP Settings" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -74,7 +74,7 @@
         </mxCell>
 
         <!-- Onboarding Workflow -->
-        <mxCell id="onboard-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="onboard-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="290" width="840" height="130" as="geometry" />
         </mxCell>
         <mxCell id="onboard-header" value="Onboarding Workflow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -138,7 +138,7 @@
         </mxCell>
 
         <!-- Recovery Workflow -->
-        <mxCell id="recovery-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="recovery-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="450" width="840" height="120" as="geometry" />
         </mxCell>
         <mxCell id="recovery-header" value="Recovery Workflow (Lost Device/Key)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -188,7 +188,7 @@
         </mxCell>
 
         <!-- Security Tips -->
-        <mxCell id="tips-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="tips-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="600" width="840" height="80" as="geometry" />
         </mxCell>
         <mxCell id="tips-header" value="Security Best Practices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">

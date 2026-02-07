@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Benefits Section -->
-        <mxCell id="benefits-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="benefits-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="80" width="340" height="150" as="geometry" />
         </mxCell>
         <mxCell id="benefits-header" value="SSPR Benefits" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -35,7 +35,7 @@
         </mxCell>
 
         <!-- Authentication Methods -->
-        <mxCell id="methods-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="methods-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="420" y="80" width="240" height="150" as="geometry" />
         </mxCell>
         <mxCell id="methods-header" value="Authentication Methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -60,7 +60,7 @@
         </mxCell>
 
         <!-- Hybrid Section -->
-        <mxCell id="hybrid-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="hybrid-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="80" width="220" height="150" as="geometry" />
         </mxCell>
         <mxCell id="hybrid-header" value="Hybrid: Password Writeback" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -89,7 +89,7 @@
         </mxCell>
 
         <!-- SSPR Flow -->
-        <mxCell id="flow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="260" width="840" height="140" as="geometry" />
         </mxCell>
         <mxCell id="flow-header" value="SSPR User Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -157,7 +157,7 @@
         </mxCell>
 
         <!-- Configuration Section -->
-        <mxCell id="config-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="config-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="430" width="840" height="130" as="geometry" />
         </mxCell>
         <mxCell id="config-header" value="SSPR Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -181,7 +181,7 @@
         </mxCell>
 
         <!-- Best Practices -->
-        <mxCell id="bp-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="bp-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="590" width="840" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bp-header" value="Best Practices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
