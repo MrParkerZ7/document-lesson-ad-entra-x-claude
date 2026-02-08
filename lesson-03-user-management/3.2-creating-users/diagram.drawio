@@ -10,7 +10,7 @@
                 <mxCell id="entra-center" value="Microsoft&#xa;Entra ID&#xa;👥 Users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="500" y="300" width="140" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="portal-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                <mxCell id="portal-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="100" width="220" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="portal-header" value="🌐 Azure Portal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" parent="1" vertex="1">
@@ -42,7 +42,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="ps-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                <mxCell id="ps-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="420" width="220" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="ps-header" value="⚡ PowerShell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" parent="1" vertex="1">
@@ -74,7 +74,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="bulk-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                <mxCell id="bulk-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="840" y="100" width="220" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="bulk-header" value="📄 Bulk CSV Import" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" parent="1" vertex="1">
@@ -106,7 +106,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="sync-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                <mxCell id="sync-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="840" y="420" width="220" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="sync-header" value="🔄 Azure AD Connect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" parent="1" vertex="1">
@@ -138,7 +138,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="required-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                <mxCell id="required-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="480" width="340" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="required-title" value="📋 Required Fields for User Creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" parent="1" vertex="1">

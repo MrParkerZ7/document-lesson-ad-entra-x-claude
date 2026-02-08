@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Tenant Container -->
-        <mxCell id="tenant" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;dashed=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="tenant" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;dashed=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="80" width="1000" height="700" as="geometry" />
         </mxCell>
         <mxCell id="tenant-label" value="TENANT (Organization's Entra ID Instance)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
@@ -19,7 +19,7 @@
         </mxCell>
 
         <!-- Directory Container -->
-        <mxCell id="directory" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="directory" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="140" y="140" width="920" height="600" as="geometry" />
         </mxCell>
         <mxCell id="directory-label" value="DIRECTORY (Identity Database)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
@@ -27,7 +27,7 @@
         </mxCell>
 
         <!-- Users Section -->
-        <mxCell id="users-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+        <mxCell id="users-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="200" width="250" height="200" as="geometry" />
         </mxCell>
         <mxCell id="users-label" value="USERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
@@ -47,7 +47,7 @@
         </mxCell>
 
         <!-- Groups Section -->
-        <mxCell id="groups-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+        <mxCell id="groups-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="470" y="200" width="250" height="200" as="geometry" />
         </mxCell>
         <mxCell id="groups-label" value="GROUPS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
@@ -67,7 +67,7 @@
         </mxCell>
 
         <!-- Applications Section -->
-        <mxCell id="apps-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+        <mxCell id="apps-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="760" y="200" width="250" height="200" as="geometry" />
         </mxCell>
         <mxCell id="apps-label" value="APPLICATIONS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
@@ -87,7 +87,7 @@
         </mxCell>
 
         <!-- Devices Section -->
-        <mxCell id="devices-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+        <mxCell id="devices-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="440" width="250" height="160" as="geometry" />
         </mxCell>
         <mxCell id="devices-label" value="DEVICES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
@@ -104,7 +104,7 @@
         </mxCell>
 
         <!-- Identity vs Principal -->
-        <mxCell id="identity-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+        <mxCell id="identity-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="470" y="440" width="540" height="160" as="geometry" />
         </mxCell>
         <mxCell id="concept-label" value="KEY CONCEPT: Identity → Principal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">

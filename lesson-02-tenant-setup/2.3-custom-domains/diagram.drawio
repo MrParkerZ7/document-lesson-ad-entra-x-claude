@@ -36,7 +36,7 @@
         <mxCell id="step3" value="3️⃣ Add DNS Record" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;shadow=1;strokeWidth=2;arcSize=20;" vertex="1" parent="1">
           <mxGeometry x="540" y="100" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dns-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+        <mxCell id="dns-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="175" width="220" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dns1" value="Type: TXT" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;spacingLeft=10;" vertex="1" parent="1">
@@ -101,7 +101,7 @@
         </mxCell>
 
         <!-- Before/After comparison -->
-        <mxCell id="before-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="before-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="450" width="300" height="120" as="geometry" />
         </mxCell>
         <mxCell id="before-title" value="❌ Before" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
@@ -114,7 +114,7 @@
           <mxGeometry x="100" y="530" width="300" height="20" as="geometry" />
         </mxCell>
 
-        <mxCell id="after-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="after-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="450" width="300" height="120" as="geometry" />
         </mxCell>
         <mxCell id="after-title" value="✅ After" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">

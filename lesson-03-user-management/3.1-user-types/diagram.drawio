@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Tenant Container -->
-        <mxCell id="tenant-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="tenant-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="80" width="1040" height="520" as="geometry" />
         </mxCell>
         <mxCell id="tenant-label" value="🏢 Contoso Tenant" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#666666;spacingLeft=10;" vertex="1" parent="1">
@@ -19,7 +19,7 @@
         </mxCell>
 
         <!-- Member Users Section -->
-        <mxCell id="member-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="member-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="140" width="420" height="420" as="geometry" />
         </mxCell>
         <mxCell id="member-header" value="👤 MEMBER USERS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=16;fontStyle=1;" vertex="1" parent="1">
@@ -41,7 +41,7 @@
         </mxCell>
 
         <!-- Member Permissions -->
-        <mxCell id="member-perms" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+        <mxCell id="member-perms" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="150" y="290" width="360" height="130" as="geometry" />
         </mxCell>
         <mxCell id="member-perms-title" value="✅ Permissions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;spacingLeft=10;" vertex="1" parent="1">
@@ -70,7 +70,7 @@
         </mxCell>
 
         <!-- Member Source -->
-        <mxCell id="member-source" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+        <mxCell id="member-source" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="150" y="440" width="360" height="100" as="geometry" />
         </mxCell>
         <mxCell id="member-source-title" value="📍 Source Options" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;spacingLeft=10;" vertex="1" parent="1">
@@ -87,7 +87,7 @@
         </mxCell>
 
         <!-- Guest Users Section -->
-        <mxCell id="guest-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="guest-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="140" width="420" height="420" as="geometry" />
         </mxCell>
         <mxCell id="guest-header" value="👥 GUEST USERS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=16;fontStyle=1;" vertex="1" parent="1">
@@ -109,7 +109,7 @@
         </mxCell>
 
         <!-- Guest Limited Permissions -->
-        <mxCell id="guest-perms" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+        <mxCell id="guest-perms" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="290" width="360" height="130" as="geometry" />
         </mxCell>
         <mxCell id="guest-perms-title" value="⚠️ Limited Permissions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;spacingLeft=10;" vertex="1" parent="1">
@@ -138,7 +138,7 @@
         </mxCell>
 
         <!-- Guest Source -->
-        <mxCell id="guest-source" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+        <mxCell id="guest-source" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="440" width="360" height="100" as="geometry" />
         </mxCell>
         <mxCell id="guest-source-title" value="📍 External Identity Providers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#9673a6;spacingLeft=10;" vertex="1" parent="1">

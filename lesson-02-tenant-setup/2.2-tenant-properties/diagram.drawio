@@ -16,7 +16,7 @@
         </mxCell>
 
         <!-- Permanent Properties -->
-        <mxCell id="permanent-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="permanent-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="100" width="280" height="180" as="geometry" />
         </mxCell>
         <mxCell id="permanent-title" value="🔒 Permanent (Cannot Change)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
@@ -42,7 +42,7 @@
         </mxCell>
 
         <!-- Editable Properties -->
-        <mxCell id="editable-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="editable-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="780" y="100" width="280" height="180" as="geometry" />
         </mxCell>
         <mxCell id="editable-title" value="✏️ Editable (Can Change)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
@@ -68,7 +68,7 @@
         </mxCell>
 
         <!-- Notification Settings -->
-        <mxCell id="notify-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="notify-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="420" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="notify-title" value="🔔 Notification Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
@@ -97,7 +97,7 @@
         </mxCell>
 
         <!-- Privacy Settings -->
-        <mxCell id="privacy-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="privacy-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="780" y="420" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="privacy-title" value="🔐 Privacy Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">

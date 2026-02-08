@@ -16,7 +16,7 @@
         </mxCell>
 
         <!-- User Settings -->
-        <mxCell id="user-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="user-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="100" width="260" height="160" as="geometry" />
         </mxCell>
         <mxCell id="user-title" value="👤 User Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
@@ -45,7 +45,7 @@
         </mxCell>
 
         <!-- Guest Settings -->
-        <mxCell id="guest-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="guest-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="820" y="100" width="260" height="160" as="geometry" />
         </mxCell>
         <mxCell id="guest-title" value="👥 Guest Access" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
@@ -74,7 +74,7 @@
         </mxCell>
 
         <!-- Invitation Settings -->
-        <mxCell id="invite-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="invite-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="420" width="260" height="160" as="geometry" />
         </mxCell>
         <mxCell id="invite-title" value="✉️ Invitation Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
@@ -103,7 +103,7 @@
         </mxCell>
 
         <!-- App Consent Settings -->
-        <mxCell id="app-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="app-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="820" y="420" width="260" height="160" as="geometry" />
         </mxCell>
         <mxCell id="app-title" value="📱 App Consent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
@@ -132,7 +132,7 @@
         </mxCell>
 
         <!-- Domain Restrictions -->
-        <mxCell id="domain-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="domain-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="520" width="260" height="100" as="geometry" />
         </mxCell>
         <mxCell id="domain-title" value="🌐 Domain Restrictions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">

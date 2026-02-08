@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Users Section -->
-        <mxCell id="users-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="users-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="100" width="300" height="300" as="geometry" />
         </mxCell>
         <mxCell id="users-header" value="👥 All Users in Directory" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
@@ -36,7 +36,7 @@
         </mxCell>
 
         <!-- Rule Engine -->
-        <mxCell id="engine-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="engine-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="420" y="140" width="320" height="220" as="geometry" />
         </mxCell>
         <mxCell id="engine-header" value="⚙️ Dynamic Membership Rule Engine" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -70,7 +70,7 @@
         </mxCell>
 
         <!-- Dynamic Group Result -->
-        <mxCell id="group-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="group-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="100" width="300" height="300" as="geometry" />
         </mxCell>
         <mxCell id="group-header" value="👥 GRP-DYN-US-Sales" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -121,7 +121,7 @@
         </mxCell>
 
         <!-- Common Rules Section -->
-        <mxCell id="rules-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="rules-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="440" width="1040" height="160" as="geometry" />
         </mxCell>
         <mxCell id="rules-header" value="📋 Common Dynamic Membership Rules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">

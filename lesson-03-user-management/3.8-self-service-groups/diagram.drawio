@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Self-Service Features -->
-        <mxCell id="features-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="features-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="80" width="350" height="200" as="geometry" />
         </mxCell>
         <mxCell id="features-header" value="⚡ Self-Service Capabilities" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -32,7 +32,7 @@
         </mxCell>
 
         <!-- Governance Controls -->
-        <mxCell id="controls-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="controls-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="80" width="350" height="200" as="geometry" />
         </mxCell>
         <mxCell id="controls-header" value="🔐 Governance Controls" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -53,7 +53,7 @@
         </mxCell>
 
         <!-- Creation Restriction -->
-        <mxCell id="restrict-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="restrict-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="820" y="80" width="280" height="200" as="geometry" />
         </mxCell>
         <mxCell id="restrict-header" value="🚫 Creation Restriction" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -84,7 +84,7 @@
         </mxCell>
 
         <!-- Naming Policy Details -->
-        <mxCell id="naming-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="naming-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="320" width="490" height="180" as="geometry" />
         </mxCell>
         <mxCell id="naming-header" value="📝 Naming Policy Example" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -122,7 +122,7 @@
         </mxCell>
 
         <!-- Expiration Policy -->
-        <mxCell id="expiry-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="expiry-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="580" y="320" width="520" height="180" as="geometry" />
         </mxCell>
         <mxCell id="expiry-header" value="⏰ Group Expiration Timeline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -169,7 +169,7 @@
         </mxCell>
 
         <!-- Benefits -->
-        <mxCell id="benefits-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="benefits-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="540" width="1040" height="80" as="geometry" />
         </mxCell>
         <mxCell id="benefits-header" value="✅ Benefits of Controlled Self-Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">

@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Stage 1: Pre-hire -->
-        <mxCell id="prehire-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="prehire-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="100" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="prehire-header" value="📋 Pre-hire" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -41,7 +41,7 @@
         </mxCell>
 
         <!-- Stage 2: Onboarding -->
-        <mxCell id="onboard-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="onboard-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="100" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="onboard-header" value="✅ Onboarding" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -74,7 +74,7 @@
         </mxCell>
 
         <!-- Stage 3: Active -->
-        <mxCell id="active-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="active-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="580" y="100" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="active-header" value="👤 Active User" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -104,7 +104,7 @@
         </mxCell>
 
         <!-- Stage 4: Offboarding -->
-        <mxCell id="offboard-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="offboard-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="100" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="offboard-header" value="🚪 Offboarding" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -127,7 +127,7 @@
         </mxCell>
 
         <!-- Deleted Users Section -->
-        <mxCell id="deleted-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="deleted-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="340" width="480" height="160" as="geometry" />
         </mxCell>
         <mxCell id="deleted-header" value="🗑️ Soft Delete &amp; Restoration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
@@ -135,7 +135,7 @@
         </mxCell>
 
         <!-- Soft Delete Timeline -->
-        <mxCell id="timeline-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="timeline-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="80" y="390" width="440" height="90" as="geometry" />
         </mxCell>
         <mxCell id="day0" value="Day 0&#xa;🗑️&#xa;Deleted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
@@ -166,7 +166,7 @@
         </mxCell>
 
         <!-- Automation Section -->
-        <mxCell id="auto-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="auto-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="580" y="340" width="460" height="160" as="geometry" />
         </mxCell>
         <mxCell id="auto-header" value="⚡ Lifecycle Automation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">

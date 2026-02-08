@@ -11,7 +11,7 @@
         </mxCell>
 
         <!-- Security Groups Section -->
-        <mxCell id="security-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="security-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="80" width="480" height="280" as="geometry" />
         </mxCell>
         <mxCell id="security-header" value="🔒 Security Groups" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=18;fontStyle=1;" vertex="1" parent="1">
@@ -22,7 +22,7 @@
         </mxCell>
 
         <!-- Security Use Cases -->
-        <mxCell id="sec-uses" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+        <mxCell id="sec-uses" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="155" width="220" height="180" as="geometry" />
         </mxCell>
         <mxCell id="sec-uses-title" value="✅ Use Cases" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;spacingLeft=10;" vertex="1" parent="1">
@@ -51,7 +51,7 @@
         </mxCell>
 
         <!-- Security Features -->
-        <mxCell id="sec-features" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+        <mxCell id="sec-features" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="155" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="sec-feat-title" value="⚙️ Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;spacingLeft=10;" vertex="1" parent="1">
@@ -77,7 +77,7 @@
         </mxCell>
 
         <!-- Microsoft 365 Groups Section -->
-        <mxCell id="m365-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="m365-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="80" width="480" height="280" as="geometry" />
         </mxCell>
         <mxCell id="m365-header" value="📧 Microsoft 365 Groups" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=18;fontStyle=1;" vertex="1" parent="1">
@@ -88,7 +88,7 @@
         </mxCell>
 
         <!-- M365 Use Cases -->
-        <mxCell id="m365-uses" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+        <mxCell id="m365-uses" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="155" width="220" height="180" as="geometry" />
         </mxCell>
         <mxCell id="m365-uses-title" value="✅ Includes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;spacingLeft=10;" vertex="1" parent="1">
@@ -114,7 +114,7 @@
         </mxCell>
 
         <!-- M365 Features -->
-        <mxCell id="m365-features" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+        <mxCell id="m365-features" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="880" y="155" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="m365-feat-title" value="⚙️ Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;spacingLeft=10;" vertex="1" parent="1">
@@ -140,7 +140,7 @@
         </mxCell>
 
         <!-- Membership Types -->
-        <mxCell id="membership-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+        <mxCell id="membership-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="400" width="1020" height="160" as="geometry" />
         </mxCell>
         <mxCell id="membership-header" value="👥 Membership Types" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontSize=16;fontStyle=1;" vertex="1" parent="1">
@@ -148,7 +148,7 @@
         </mxCell>
 
         <!-- Assigned -->
-        <mxCell id="assigned-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+        <mxCell id="assigned-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="455" width="440" height="85" as="geometry" />
         </mxCell>
         <mxCell id="assigned-title" value="✋ Assigned Membership" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;spacingLeft=10;" vertex="1" parent="1">
@@ -162,7 +162,7 @@
         </mxCell>
 
         <!-- Dynamic -->
-        <mxCell id="dynamic-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+        <mxCell id="dynamic-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="455" width="440" height="85" as="geometry" />
         </mxCell>
         <mxCell id="dynamic-title" value="⚡ Dynamic Membership" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;spacingLeft=10;" vertex="1" parent="1">
