@@ -265,6 +265,7 @@ Get-MgContext
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 2.0 | 2025 | Complete restructure with 80 sub-lessons and diagrams |
 | 1.0 | 2024 | Initial release |
 
 ---

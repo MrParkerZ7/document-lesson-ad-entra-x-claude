@@ -12,25 +12,27 @@ The repository contains 10 lessons organized as follows:
 
 ```
 lesson-XX-topic/
-├── README.md              # Main lesson content (or overview if sub-lessons exist)
+├── README.md              # Lesson overview linking to sub-lessons
 ├── X.1-subtopic/
 │   ├── README.md          # Sub-lesson content
-│   └── diagram.drawio     # Visual diagram for the sub-lesson
+│   ├── diagram.drawio     # Visual diagram source (Draw.io XML)
+│   └── diagram.png        # Exported diagram image
 ├── X.2-subtopic/
 │   └── ...
 ```
 
-**Restructuring Status**: Lesson 01 has been restructured into sub-lessons. Lessons 02-10 need the same treatment:
-- Split each lesson into logical sub-lessons (numbered X.1, X.2, etc.)
-- Each sub-lesson folder contains a README.md and diagram.drawio file
-- Update main lesson README.md to be an overview linking to sub-lessons
+All 10 lessons have been restructured into sub-lessons with consistent formatting.
 
 ## Diagram Format
 
 Diagrams use **Draw.io XML format** (`.drawio` files):
 - Can be opened with diagrams.net (web), VS Code Draw.io extension, or desktop app
-- Each sub-lesson should have an accompanying diagram illustrating key concepts
-- Use consistent styling: rounded boxes, color coding by category, clear labels
+- Each sub-lesson has an accompanying diagram with exported PNG image
+- Styling conventions:
+  - Container/group boxes: sharp corners (`rounded=0`)
+  - Content boxes: rounded corners (`rounded=1`)
+  - Color coding by category
+  - Clear labels and consistent sizing
 
 ## Writing Guidelines
 
