@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram name="Identity Secure Score" id="identity-secure-score-diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Identity Secure Score Overview" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Score Gauge Section -->
+        <mxCell id="gauge-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gauge-title" value="Score Calculation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="85" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gauge-formula" value="Score = (Points Achieved / Max Points) x 100%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="125" width="240" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="score-example" value="Example: 65/100 = 65%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="score-bar-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="225" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="score-bar-fill" value="65%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00a36c;strokeColor=#00875a;strokeWidth=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="225" width="156" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="score-label-low" value="0%" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="248" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="score-label-high" value="100%" style="text;html=1;strokeColor=none;fillColor=none;align=right;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="270" y="248" width="30" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Score Components Box -->
+        <mxCell id="components-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="components-title" value="Score Components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="360" y="85" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-identity" value="Identity Security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="125" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-devices" value="Device Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="125" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-apps" value="Application Security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="175" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-infra" value="Infrastructure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="175" width="120" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-center" value="Identity&#xa;Secure&#xa;Score" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=2;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="80" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to center -->
+        <mxCell id="arr-comp-1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="comp-identity" target="comp-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr-comp-2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="comp-devices" target="comp-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr-comp-3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="comp-apps" target="comp-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr-comp-4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="comp-infra" target="comp-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Benchmark Box -->
+        <mxCell id="benchmark-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="benchmark-title" value="Organization Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="85" width="280" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bench-your" value="Your Score: 65%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=2;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="125" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bench-avg" value="Industry Average: 58%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="170" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bench-size" value="Size Peers: 62%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bench-top" value="Top Performers: 85%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="250" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from gauge to components -->
+        <mxCell id="flow-arrow-1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="gauge-box" target="components-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow from components to benchmark -->
+        <mxCell id="flow-arrow-2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="components-box" target="benchmark-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Section Title: Improvement Actions -->
+        <mxCell id="actions-section-title" value="Improvement Actions by Impact" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="310" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- High Impact Box -->
+        <mxCell id="high-impact-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="high-impact-title" value="HIGH IMPACT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="355" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="high-1" value="Require MFA for All Users (10 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="390" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="high-2" value="Block Legacy Authentication (8 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="430" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="high-3" value="Enable Sign-in Risk Policy (7 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="470" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="high-4" value="Enable User Risk Policy (7 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="510" width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Medium Impact Box -->
+        <mxCell id="medium-impact-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="350" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="medium-impact-title" value="MEDIUM IMPACT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="380" y="355" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="med-1" value="Ensure All Admins Use MFA (5 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="390" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med-2" value="Enable Password Protection (4 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="430" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med-3" value="Use Least Privileged Roles (4 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="470" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med-4" value="Enable PIM for Admin Roles (4 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="510" width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Standard Impact Box -->
+        <mxCell id="standard-impact-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="350" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="standard-impact-title" value="STANDARD IMPACT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="720" y="355" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="std-1" value="Enable Self-Service Password Reset (2 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="390" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="std-2" value="Configure Sign-in Frequency (2 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="430" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="std-3" value="Require Approved Apps (2 pts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="470" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="std-4" value="Review Access Regularly (1 pt)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="510" width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Section Title: Score Improvement Journey -->
+        <mxCell id="journey-section-title" value="Score Improvement Journey" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="600" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 1 -->
+        <mxCell id="phase1-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-title" value="Phase 1: Quick Wins" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="655" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-time" value="Week 1-2" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="678" width="200" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1-1" value="Block Legacy Auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="700" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-2" value="Enable Risk Policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="732" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-3" value="Password Protection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="764" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-score" value="+25 points" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;strokeWidth=1;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="798" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 2 -->
+        <mxCell id="phase2-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="650" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-title" value="Phase 2: Foundation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="290" y="655" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-time" value="Week 3-4" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="290" y="678" width="200" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-1" value="MFA for All Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="305" y="700" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-2" value="Reduce Global Admins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="305" y="732" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-3" value="Admin MFA Enforcement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="305" y="764" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-score" value="+20 points" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="798" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 3 -->
+        <mxCell id="phase3-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="650" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-title" value="Phase 3: Advanced" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="540" y="655" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-time" value="Month 2" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="678" width="200" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p3-1" value="Implement PIM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="555" y="700" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-2" value="Configure Access Reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="555" y="732" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-3" value="Least Privilege Audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="555" y="764" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-score" value="+11 points" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="798" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 4 -->
+        <mxCell id="phase4-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="650" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-title" value="Phase 4: Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="790" y="655" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-time" value="Month 3+" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="790" y="678" width="200" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p4-1" value="SSPR Enablement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="805" y="700" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-2" value="CA Optimization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="805" y="732" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-3" value="Continuous Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="805" y="764" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-score" value="+6 points" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;strokeWidth=1;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="805" y="798" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Journey Arrows -->
+        <mxCell id="journey-arrow-1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="phase1-box" target="phase2-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="journey-arrow-2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="phase2-box" target="phase3-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="journey-arrow-3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="phase3-box" target="phase4-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cumulative Score Box -->
+        <mxCell id="cumulative-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="860" width="950" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cumulative-title" value="Cumulative Improvement: +62 points over 3 months" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="860" width="950" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cumulative-detail" value="Starting Score: 25%  |  Week 2: 50%  |  Week 4: 70%  |  Month 2: 81%  |  Month 3+: 87%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="890" width="950" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Microsoft Secure Score Relationship -->
+        <mxCell id="mss-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="80" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mss-title" value="Microsoft Secure Score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="85" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mss-identity" value="Identity Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=2;shadow=1;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mss-device" value="Device Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="160" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mss-apps" value="Apps Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mss-data" value="Data Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="230" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from benchmark to MSS -->
+        <mxCell id="flow-arrow-3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="benchmark-box" target="mss-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="mss-note" value="Identity Secure Score&#xa;feeds into Microsoft&#xa;Secure Score" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="260" width="160" height="35" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

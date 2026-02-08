@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram name="Governance Best Practices" id="governance-best-practices-diagram">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Identity Governance Framework &amp; Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="15" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Governance Framework Section -->
+        <mxCell id="framework-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="1320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="framework-title" value="Governance Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Governance Pillars -->
+        <mxCell id="pillar1" value="Identity&#xa;Protection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar2" value="Privileged&#xa;Identity (PIM)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar3" value="Access&#xa;Reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar4" value="Entitlement&#xa;Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar5" value="Emergency&#xa;Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar6" value="Separation&#xa;of Duties" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pillar7" value="Audit &amp;&#xa;Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Roles Section -->
+        <mxCell id="roles-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="100" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="roles-title" value="Governance Roles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="105" width="420" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="role1" value="Governance Owner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=1;shadow=1;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="935" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="role2" value="Identity Admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=1;shadow=1;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="role3" value="Security Analyst" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=1;shadow=1;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="role4" value="Resource Owners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=1;shadow=1;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="role5" value="Auditors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005a9e;strokeWidth=1;shadow=1;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="165" width="90" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Best Practice Areas -->
+        <mxCell id="bp-title" value="Best Practice Areas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="550" y="220" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Identity Protection Best Practices -->
+        <mxCell id="idp-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-title" value="Identity Protection Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="265" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-1" value="Risk Policies: Medium+ threshold" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-2" value="Investigation: SLA &lt; 4 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-3" value="Remediation: Auto password change" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-4" value="Monitoring: Real-time alerts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-5" value="Exclude emergency accounts from all policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="375" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="idp-6" value="Use Conditional Access for advanced control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="405" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- PIM Best Practices -->
+        <mxCell id="pim-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-title" value="PIM Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="380" y="265" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-1" value="Critical roles: 1-4 hr activation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="395" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-2" value="Approval: Required for GA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-3" value="MFA: Required on activation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="395" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-4" value="Justification: Always required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="540" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-5" value="No permanent active assignments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="375" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="pim-6" value="Monitor all activations with alerts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="405" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Access Reviews Best Practices -->
+        <mxCell id="ar-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="260" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-title" value="Access Reviews Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="720" y="265" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-1" value="Admin roles: Quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="735" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-2" value="Guest users: Monthly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="295" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-3" value="Duration: 14-21 days max" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="735" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-4" value="Auto-apply: Yes for routine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="335" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-5" value="Right reviewers: Business context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="375" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ar-6" value="Enable recommendations and reminders" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="405" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Emergency Access Best Practices -->
+        <mxCell id="ea-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="260" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-title" value="Emergency Access Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="265" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-1" value="2+ break-glass accounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="295" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-2" value="Cloud-only, FIDO2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="295" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-3" value="Split credential storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="335" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-4" value="Test every 90 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="335" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-5" value="Exclude from ALL Conditional Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="375" width="260" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ea-6" value="Alert on ANY sign-in attempt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="405" width="260" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Implementation Lifecycle -->
+        <mxCell id="lifecycle-title" value="Implementation Lifecycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="550" y="460" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Lifecycle Box -->
+        <mxCell id="lifecycle-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="1320" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 1 -->
+        <mxCell id="phase1-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-title" value="Phase 1: Foundation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="525" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-1" value="Enable Identity Protection (report-only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="75" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-2" value="Configure PIM for critical roles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="215" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-3" value="Set up break-glass accounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="75" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-4" value="Configure admin role reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="215" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 2 -->
+        <mxCell id="phase2-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="520" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-title" value="Phase 2: Enforcement" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="525" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-1" value="Enable policies in enforced mode" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="415" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-2" value="Expand PIM to all admin roles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="555" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-3" value="Configure entitlement catalogs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="415" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-4" value="Set up separation of duties" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="555" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 3 -->
+        <mxCell id="phase3-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="520" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-title" value="Phase 3: Optimization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="740" y="525" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-1" value="Tune based on false positives" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="755" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-2" value="Enable access review automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="895" y="550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-3" value="Implement governance dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="755" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-4" value="Establish KPIs and metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="895" y="590" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 4 -->
+        <mxCell id="phase4-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="520" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-title" value="Phase 4: Continuous" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="525" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-1" value="Regular access reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="550" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-2" value="Quarterly PIM audits" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="550" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-3" value="Break-glass testing (90 days)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="590" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-4" value="Policy refresh annually" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="590" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Lifecycle Arrows -->
+        <mxCell id="lc-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="phase1-box" target="phase2-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lc-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="phase2-box" target="phase3-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lc-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="phase3-box" target="phase4-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Continuous Loop Arrow -->
+        <mxCell id="loop-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="640" as="sourcePoint" />
+            <mxPoint x="1210" y="660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="660" />
+              <mxPoint x="1300" y="690" />
+              <mxPoint x="700" y="690" />
+              <mxPoint x="700" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loop-label" value="Continuous Improvement Cycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#9673a6;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="850" y="670" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Key Metrics Section -->
+        <mxCell id="metrics-title" value="Key Governance Metrics" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="550" y="710" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Metrics -->
+        <mxCell id="metric1" value="Identity Secure Score&#xa;&gt; 80%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="metric2" value="Review Completion&#xa;&gt; 95%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="metric3" value="PIM Compliance&#xa;100%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="metric4" value="Risk Remediation&#xa;&lt; 4 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="metric5" value="Role Documentation&#xa;100%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="metric6" value="Break-Glass Test&#xa;Every 90 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="750" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Common Mistakes Section -->
+        <mxCell id="mistakes-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="1320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mistakes-title" value="Common Mistakes to Avoid:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="50" y="825" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake1" value="Dismissing risks without investigation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="55" y="850" width="155" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake2" value="Long PIM activation durations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="225" y="850" width="145" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake3" value="Permanent active role assignments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="385" y="850" width="155" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake4" value="Wrong reviewers for access reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="555" y="850" width="155" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake5" value="Break-glass in Conditional Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="725" y="850" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake6" value="No clear governance ownership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="890" y="850" width="145" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake7" value="Reactive-only approach" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="850" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake8" value="No metrics tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="850" width="110" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

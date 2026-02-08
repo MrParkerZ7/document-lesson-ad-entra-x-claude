@@ -1,0 +1,345 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Provisioning with SSO" id="provisioning-sso-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="SCIM Provisioning with SSO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="500" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Combined Flow -->
+        <mxCell id="flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="55" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-header" value="Provisioning + SSO Complete Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="55" width="1100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Steps -->
+        <mxCell id="step1" value="User Assigned&#xa;in Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="125" as="sourcePoint" />
+            <mxPoint x="185" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step2" value="Provisioning&#xa;Detects" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="190" y="100" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="125" as="sourcePoint" />
+            <mxPoint x="310" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step3" value="SCIM POST&#xa;Creates User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="315" y="100" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="125" as="sourcePoint" />
+            <mxPoint x="440" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step4" value="User Account&#xa;in App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="100" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="125" as="sourcePoint" />
+            <mxPoint x="565" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step5" value="User Accesses&#xa;Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="100" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr5" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="125" as="sourcePoint" />
+            <mxPoint x="695" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step6" value="SSO Auth&#xa;(SAML/OIDC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr6" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="125" as="sourcePoint" />
+            <mxPoint x="820" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step7" value="Match to&#xa;Provisioned User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="825" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arr7" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="125" as="sourcePoint" />
+            <mxPoint x="960" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step8" value="Seamless&#xa;Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#006400;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="965" y="100" width="75" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Phase Labels -->
+        <mxCell id="phase1-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="160" width="480" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-label" value="PROVISIONING PHASE - User created in app before first login" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;fontColor=#82b366;align=center;" vertex="1" parent="1">
+          <mxGeometry x="115" y="170" width="360" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phase2-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="490" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-label" value="SSO PHASE - User authenticates and app matches identity" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;fontColor=#9673a6;align=center;" vertex="1" parent="1">
+          <mxGeometry x="620" y="170" width="370" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- SCIM Section -->
+        <mxCell id="scim-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="560" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scim-header" value="SCIM Protocol" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- SCIM Operations -->
+        <mxCell id="scim-create" value="POST /Users&#xa;Create User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="265" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="scim-get" value="GET /Users&#xa;List Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="265" width="85" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="scim-patch" value="PATCH /Users/{id}&#xa;Update User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="255" y="265" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="scim-delete" value="DELETE /Users/{id}&#xa;Remove User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="265" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="scim-groups" value="/Groups&#xa;Group Sync" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="490" y="265" width="95" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- SCIM Payload -->
+        <mxCell id="payload-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="320" width="525" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="payload-label" value="SCIM User Resource:" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="325" width="120" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pay1" value="userName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="342" width="65" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay2" value="displayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="342" width="75" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay3" value="emails" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="342" width="50" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay4" value="name (given/family)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="342" width="105" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay5" value="externalId" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="385" y="342" width="65" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay6" value="active" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="455" y="342" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pay7" value="groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="505" y="342" width="50" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Attribute Mapping Section -->
+        <mxCell id="mapping-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="mapping-header" value="Attribute Mapping" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="520" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Mapping Arrows -->
+        <mxCell id="map-entra" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="260" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="map-entra-header" value="Entra ID Attributes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="260" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="entra1" value="userPrincipalName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="285" width="100" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="entra2" value="displayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="312" width="100" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="entra3" value="mail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="339" width="100" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Mapping Arrows -->
+        <mxCell id="map-arr1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="296" as="sourcePoint" />
+            <mxPoint x="925" y="296" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="296" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map-arr2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="323" as="sourcePoint" />
+            <mxPoint x="925" y="323" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="323" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="map-arr3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="350" as="sourcePoint" />
+            <mxPoint x="925" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="map-transform" value="Transform" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontStyle=2;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="830" y="270" width="60" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="map-app" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="260" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="map-app-header" value="Application Attributes (SCIM)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="260" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="app1" value="userName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="940" y="285" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="app2" value="displayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="940" y="312" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="app3" value="emails[work]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="940" y="339" width="80" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Provisioning Cycles -->
+        <mxCell id="cycles-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="395" width="360" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="cycles-header" value="Provisioning Cycles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="395" width="360" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cycle-initial" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="435" width="165" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="cycle-initial-header" value="Initial Cycle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="435" width="165" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="init1" value="Scans ALL users in scope" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="458" width="150" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="init2" value="Creates users in target app" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="473" width="150" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="init3" value="May take hours for large dirs" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="488" width="155" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="init4" value="Run once on first enable" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="503" width="150" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cycle-incr" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="435" width="155" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="cycle-incr-header" value="Incremental Cycle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="435" width="155" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="incr1" value="Runs every ~40 minutes" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="235" y="458" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="incr2" value="Processes changes only" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="235" y="473" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="incr3" value="Fast and efficient" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="235" y="488" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="incr4" value="Continuous until disabled" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="235" y="503" width="145" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Deprovisioning -->
+        <mxCell id="deprov-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="395" width="360" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="deprov-header" value="Deprovisioning Actions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="395" width="360" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="deprov-desc" value="When user unassigned or goes out of scope:" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="435" y="435" width="250" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="deprov-disable" value="Disable&#xa;(Recommended)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="460" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="deprov-delete" value="Delete" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="555" y="460" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="deprov-nothing" value="Do Nothing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="460" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="deprov-note" value="Accidental deletion threshold prevents mass deletions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="515" width="320" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- User Matching -->
+        <mxCell id="match-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="395" width="340" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="match-header" value="SSO User Matching" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="395" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="match-desc" value="SSO identity must match provisioned user:" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="435" width="230" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="match-saml" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="455" width="145" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="match-saml-header" value="SAML" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="455" width="145" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="saml-match1" value="NameID = userName" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="820" y="478" width="120" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="saml-match2" value="Match by email" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="820" y="493" width="120" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="match-oidc" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="455" width="155" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="match-oidc-header" value="OIDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="455" width="155" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="oidc-match1" value="sub = externalId" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="975" y="478" width="120" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="oidc-match2" value="Match by objectId" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="975" y="493" width="120" height="15" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

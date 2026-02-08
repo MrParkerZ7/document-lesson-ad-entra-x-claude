@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram name="Access Reviews" id="access-reviews-diagram">
+    <mxGraphModel dx="1200" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Access Reviews Lifecycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="300" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Review Types Section -->
+        <mxCell id="types-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="types-title" value="What Can Be Reviewed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="type-1" value="Group Membership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="100" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="type-2" value="Application Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="130" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="type-3" value="Entra ID Roles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="160" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="type-4" value="Azure Resource Roles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="190" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="type-5" value="Access Packages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="220" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Reviewer Types Section -->
+        <mxCell id="reviewers-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="reviewers-title" value="Who Can Review" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="75" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rev-1" value="Group Owners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="100" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rev-2" value="User's Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="130" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rev-3" value="Specific Users/Groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="160" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rev-4" value="Self-Review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="190" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rev-5" value="Multi-Stage Reviewers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="220" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Frequency Section -->
+        <mxCell id="freq-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-title" value="Review Frequency" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="520" y="75" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-1" value="One-time" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="100" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-2" value="Weekly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="100" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-3" value="Monthly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="135" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-4" value="Quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="135" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-5" value="Semi-Annual" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="170" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-6" value="Annually" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="170" width="80" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-note" value="Quarterly recommended&#xa;for privileged access" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#d6b656;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="535" y="205" width="170" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Decision Helpers Section -->
+        <mxCell id="helpers-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="helpers-title" value="Decision Helpers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="760" y="75" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="help-1" value="Recommendations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="100" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="help-2" value="Last Sign-in Date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="130" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="help-3" value="Inactivity Period" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="160" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="help-4" value="Manager Relationship" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="190" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="help-5" value="Usage Patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="220" width="170" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Review Workflow -->
+        <mxCell id="workflow-title" value="Access Review Workflow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="270" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Workflow Box -->
+        <mxCell id="workflow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="920" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Step 1: Create -->
+        <mxCell id="w-step1" value="1. Create&#xa;Review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w-step1-detail" value="Admin configures&#xa;scope &amp; settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 2: Notify -->
+        <mxCell id="w-step2" value="2. Notify&#xa;Reviewers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w-step2-detail" value="Email sent with&#xa;review link" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="180" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 3: Review -->
+        <mxCell id="w-step3" value="3. Perform&#xa;Reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w-step3-detail" value="Review each user&#xa;in myaccess portal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 4: Decision -->
+        <mxCell id="w-step4" value="4. Make&#xa;Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="330" width="90" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Decision outcomes -->
+        <mxCell id="decision-approve" value="Approve" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="330" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-deny" value="Deny" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="375" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-none" value="No Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="420" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Step 5: Apply -->
+        <mxCell id="w-step5" value="5. Apply&#xa;Results" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w-step5-detail" value="Auto or manual&#xa;remediation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="690" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 6: Result -->
+        <mxCell id="w-step6-keep" value="Keep&#xa;Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="325" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w-step6-remove" value="Remove&#xa;Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="385" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Workflow Arrows -->
+        <mxCell id="w-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="w-step1" target="w-step2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="w-step2" target="w-step3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="w-step3" target="w-step4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="w-arrow4a" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="w-step4" target="decision-approve">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow4b" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;" edge="1" parent="1" source="w-step4" target="decision-deny">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow4c" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="w-step4" target="decision-none">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="w-arrow5a" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="decision-approve" target="w-step5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow5b" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="decision-deny" target="w-step5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow5c" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="decision-none" target="w-step5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="w-arrow6a" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="w-step5" target="w-step6-keep">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w-arrow6b" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;" edge="1" parent="1" source="w-step5" target="w-step6-remove">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Frequency Recommendations -->
+        <mxCell id="rec-title" value="Recommended Review Frequencies" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Frequency Grid -->
+        <mxCell id="freq-grid" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="540" width="800" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-high" value="Monthly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="555" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-high-item" value="Guest Users, External Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="120" y="595" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-med" value="Quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="555" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-med-item" value="Admin Roles, Sensitive Groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="595" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-low1" value="Semi-Annually" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="555" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-low1-item" value="Application Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="595" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-low2" value="Annually" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="555" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="freq-low2-item" value="Standard Groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="595" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freq-legend" value="Higher Risk = More Frequent Reviews" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="350" y="635" width="300" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram name="Identity Protection" id="identity-protection-diagram">
+    <mxGraphModel dx="1200" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Identity Protection Overview" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="300" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Signal Collection Box -->
+        <mxCell id="signals-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="signals-title" value="Signal Collection" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="85" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="signal-1" value="Sign-in Patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="signal-2" value="Device Information" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="signal-3" value="Location Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="signal-4" value="Threat Intelligence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ML Analysis Box -->
+        <mxCell id="ml-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ml-title" value="ML Analysis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="85" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ml-1" value="Compare Baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="125" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ml-2" value="Detect Anomalies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ml-3" value="Correlate Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="215" width="160" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Risk Assignment Box -->
+        <mxCell id="risk-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-title" value="Risk Assignment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="600" y="85" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="risk-none" value="None" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-low" value="Low" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-medium" value="Medium" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="165" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-high" value="High" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="165" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="risk-user" value="User Risk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="210" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-signin" value="Sign-in Risk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="245" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Response Box -->
+        <mxCell id="response-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="80" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="response-title" value="Response Actions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="880" y="85" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="response-1" value="Block Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="response-2" value="Require MFA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="160" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="response-3" value="Password Change" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="200" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="response-4" value="Notify Admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Arrows -->
+        <mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="signals-box" target="ml-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="160" />
+              <mxPoint x="290" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ml-box" target="risk-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="160" />
+              <mxPoint x="570" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="risk-box" target="response-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="160" />
+              <mxPoint x="850" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Risk Types Section -->
+        <mxCell id="types-title" value="Risk Type Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- User Risk Box -->
+        <mxCell id="user-risk-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="350" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="user-risk-title" value="User Risk (Cumulative)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="140" y="355" width="350" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ur-1" value="Leaked Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="390" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ur-2" value="Anomalous Activity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="390" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ur-3" value="Password Spray" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="430" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ur-4" value="Threat Intelligence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="430" width="150" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ur-remediation" value="Remediation: Password Change Required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="480" width="270" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Sign-in Risk Box -->
+        <mxCell id="signin-risk-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="350" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="signin-risk-title" value="Sign-in Risk (Per Event)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="610" y="355" width="350" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sr-1" value="Anonymous IP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="390" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sr-2" value="Atypical Travel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="390" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sr-3" value="Malware-linked IP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="430" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sr-4" value="Token Anomaly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="430" width="150" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sr-remediation" value="Remediation: MFA Challenge Required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="480" width="270" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Investigation Flow -->
+        <mxCell id="invest-title" value="Investigation Workflow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inv-1" value="1. Review&#xa;Detections" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="595" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="inv-2" value="2. Check&#xa;Sign-in Logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="595" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="inv-3" value="3. Verify&#xa;with User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="595" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="inv-4" value="4. Determine&#xa;Status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="595" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inv-true" value="True Positive&#xa;→ Remediate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="580" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="inv-false" value="False Positive&#xa;→ Dismiss" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="630" width="110" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Investigation Arrows -->
+        <mxCell id="inv-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="inv-1" target="inv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inv-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="inv-2" target="inv-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inv-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="inv-3" target="inv-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inv-arrow4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;" edge="1" parent="1" source="inv-4" target="inv-true">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inv-arrow5" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="inv-4" target="inv-false">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="655" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

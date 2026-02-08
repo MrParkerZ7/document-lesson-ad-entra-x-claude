@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Monitoring Architecture Overview" id="monitoring-overview">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Microsoft Entra ID - Monitoring Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Source Layer Container -->
+        <mxCell id="source-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="300" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="source-title" value="Activity Sources" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Source Items -->
+        <mxCell id="source-users" value="User Sign-ins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="source-admins" value="Admin Actions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="source-apps" value="App Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="source-sp" value="Service Principals" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="source-provision" value="Provisioning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="source-risk" value="Risk Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Processing Layer Container -->
+        <mxCell id="processing-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="300" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="processing-title" value="Log Types (Entra ID)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="500" y="90" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Log Type Items -->
+        <mxCell id="log-signin" value="Sign-in Logs&#xa;(30 days)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="log-audit" value="Audit Logs&#xa;(30 days)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="130" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="log-provision" value="Provisioning Logs&#xa;(30 days)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="200" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="log-idp" value="Identity Protection&#xa;(90 days)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="200" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="log-note" value="Default Portal Retention" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="530" y="270" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Source to Processing -->
+        <mxCell id="arrow-source-process" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="source-container" target="processing-container">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Export Destinations Container -->
+        <mxCell id="export-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="320" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="export-title" value="Export Destinations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="900" y="90" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Export Items -->
+        <mxCell id="export-la" value="Log Analytics Workspace&#xa;(KQL Queries)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="130" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="export-storage" value="Storage Account&#xa;(Long-term Archive)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="130" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="export-eh" value="Event Hubs&#xa;(Real-time Stream)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="200" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="export-siem" value="SIEM Integration&#xa;(Sentinel, Splunk)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="200" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="export-note" value="Extended Retention (Years)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="270" width="270" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Processing to Export -->
+        <mxCell id="arrow-process-export" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="processing-container" target="export-container">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label1" value="Diagnostic&#xa;Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="820" y="190" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Analysis Layer Container -->
+        <mxCell id="analysis-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="420" width="720" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-title" value="Analysis and Visualization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="720" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Analysis Items -->
+        <mxCell id="analysis-workbooks" value="Azure Monitor&#xa;Workbooks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="480" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-kql" value="KQL Queries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="480" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-alerts" value="Alert Rules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="830" y="480" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-dashboard" value="Dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-powerbi" value="Power BI Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="550" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis-sentinel" value="Microsoft Sentinel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="830" y="550" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Export to Analysis -->
+        <mxCell id="arrow-export-analysis" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;shadow=0;" edge="1" parent="1" source="export-container" target="analysis-container">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="380" />
+              <mxPoint x="860" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Portal Access Container -->
+        <mxCell id="portal-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-title" value="Portal Access Points" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="430" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Portal Items -->
+        <mxCell id="portal-entra" value="Entra Admin Center&#xa;(entra.microsoft.com)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="480" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-azure" value="Azure Portal&#xa;(portal.azure.com)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="480" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-graph" value="Microsoft Graph API&#xa;(graph.microsoft.com)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="550" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-ps" value="PowerShell&#xa;(Microsoft.Graph)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="550" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Processing to Portal -->
+        <mxCell id="arrow-process-portal" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=0;exitY=1;entryX=0.5;entryY=0;shadow=0;" edge="1" parent="1" source="processing-container" target="portal-container">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="380" />
+              <mxPoint x="250" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label2" value="Direct&#xa;Access" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="340" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Retention Legend -->
+        <mxCell id="legend-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="80" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Retention Periods" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="90" width="280" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-row1" value="Free Tier: 7 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="125" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-row2" value="P1/P2: 30 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="165" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-row3" value="ID Protection: 90 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="205" width="150" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

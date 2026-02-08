@@ -1,0 +1,221 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="SAML SSO" id="saml-sso-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="SAML-Based Single Sign-On" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="500" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- SAML Flow -->
+        <mxCell id="flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="760" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-header" value="SP-Initiated SAML SSO Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="760" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Actors -->
+        <mxCell id="actor-user" value="👤&#xa;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="110" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-sp" value="📱 Service Provider&#xa;(Application)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-idp" value="🔐 Identity Provider&#xa;(Entra ID)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="105" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Flow steps -->
+        <mxCell id="step1" value="1. Access app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="120" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" value="2. SAML Request&#xa;(Redirect to IdP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" value="3. User authenticates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="100" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4" value="4. SAML Response&#xa;with Assertion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="145" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" value="5. Validate &amp;&#xa;grant access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="90" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Flow arrows -->
+        <mxCell id="arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="actor-user" target="actor-sp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="actor-sp" target="actor-idp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;shadow=0;" edge="1" parent="1" source="actor-idp" target="actor-sp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Assertion content -->
+        <mxCell id="assertion-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="215" width="710" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="assertion-label" value="SAML Assertion Contains:" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="assert1" value="Issuer (IdP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert2" value="Subject (User)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="240" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert3" value="Conditions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="240" width="70" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert4" value="Signature" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="240" width="70" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert5" value="Attributes (Claims)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="240" width="110" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert6" value="Timestamps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="240" width="80" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assert7" value="Audience" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="240" width="70" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Configuration -->
+        <mxCell id="config-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="60" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="config-header" value="SAML Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="config1" value="Identifier (Entity ID)&#xa;Unique app identifier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="100" width="135" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="config2" value="Reply URL (ACS)&#xa;Assertion destination" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="100" width="135" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="config3" value="Sign on URL&#xa;SP login page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="145" width="135" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="config4" value="Logout URL&#xa;Single logout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="145" width="135" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="config-path" value="Enterprise apps → [App] → Single sign-on → SAML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="190" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="config-note" value="💡 Get these values from your application vendor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="220" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Claims -->
+        <mxCell id="claims-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="560" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-header" value="User Attributes &amp; Claims" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claim-nameid" value="NameID (Required)&#xa;user.userprincipalname" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="345" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-email" value="email&#xa;user.mail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="345" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-name" value="displayname&#xa;user.displayname" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="345" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-groups" value="groups&#xa;user.groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="345" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-custom" value="custom&#xa;user.department" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="345" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-note" value="Add claims: User Attributes &amp; Claims → Add new claim" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="520" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Certificate -->
+        <mxCell id="cert-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="520" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cert-header" value="SAML Signing Certificate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="520" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cert-purpose" value="Signs SAML Response/Assertion for authenticity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="340" width="480" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cert-opt1" value="Sign Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="375" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cert-opt2" value="Sign Assertion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="375" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cert-opt3" value="Sign Both ✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="375" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cert-download" value="Download: Certificate (Base64) | Federation Metadata XML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="410" width="320" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cert-rotate" value="⚠️ Rotate before expiry!" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="410" width="150" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Common Errors -->
+        <mxCell id="errors-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="470" width="1100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="errors-header" value="Common SAML Errors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="470" width="1100" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="err1" value="Invalid Signature&#xa;→ Re-upload certificate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="510" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err2" value="Invalid Audience&#xa;→ Check Entity ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="510" width="130" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err3" value="User Not Found&#xa;→ Check NameID mapping" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="510" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err4" value="Time Skew&#xa;→ Sync NTP clocks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="510" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err5" value="User Not Assigned&#xa;→ Add to app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="510" width="130" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err6" value="🔍 Debug: SAML Tracer extension" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="510" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="err7" value="📋 Logs: Sign-in logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="510" width="150" height="35" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

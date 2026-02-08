@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Enterprise Applications" id="enterprise-applications-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Enterprise Applications Configuration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Main Areas -->
+        <mxCell id="areas-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="460" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="areas-header" value="Enterprise Application Settings" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="460" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="area1" value="👥 Users &amp; Groups&#xa;Who can access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="125" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="area2" value="🔐 Single Sign-On&#xa;How they sign in" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="125" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="area3" value="📤 Provisioning&#xa;User lifecycle sync" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="125" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="area4" value="⚙️ Properties&#xa;App settings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="190" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="area5" value="🔒 Conditional Access&#xa;Access policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="190" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="area6" value="📝 Activity logs&#xa;Audit trail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- User Assignment -->
+        <mxCell id="assign-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="340" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-header" value="User &amp; Group Assignment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="assign-required" value="Assignment Required = Yes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="120" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-benefit1" value="✅ Only assigned users access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="150" width="150" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-benefit2" value="✅ Better security control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="177" width="150" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-benefit3" value="✅ Audit who has access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="204" width="150" height="22" as="geometry" />
+        </mxCell>
+
+        <mxCell id="assign-types" value="Assignment Types:" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-user" value="👤 User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="145" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-group" value="👥 Group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="145" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="assign-rec" value="✅ Use groups for easier management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="180" width="150" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- SSO Methods -->
+        <mxCell id="sso-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sso-header" value="SSO Methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sso-oidc" value="OIDC/OAuth&#xa;Modern apps ✅" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sso-saml" value="SAML&#xa;Enterprise apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sso-password" value="Password-based&#xa;Credential vault" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sso-linked" value="Linked&#xa;External IdP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="170" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sso-disabled" value="Disabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="220" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Provisioning -->
+        <mxCell id="prov-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="560" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="prov-header" value="User Provisioning (SCIM)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Provisioning flow -->
+        <mxCell id="prov-entra" value="Entra ID&#xa;Users/Groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="330" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="prov-service" value="Provisioning&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="330" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="prov-app" value="Target App&#xa;(SCIM API)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="330" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Provisioning arrows -->
+        <mxCell id="prov-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="prov-entra" target="prov-service">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prov-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="prov-service" target="prov-app">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="prov-actions" value="Create | Update | Disable | Delete users automatically" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="395" width="460" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Properties -->
+        <mxCell id="props-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="500" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="props-header" value="Application Properties" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="500" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="prop1" value="Enabled for sign-in&#xa;On/Off access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="325" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prop2" value="Visible to users&#xa;Show in My Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="785" y="325" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prop3" value="Assignment required&#xa;Restrict access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="325" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prop4" value="Homepage URL&#xa;App link" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="325" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="props-note" value="💡 Set &quot;Enabled = No&quot; to block access without deleting app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="380" width="465" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- My Apps Portal -->
+        <mxCell id="myapps-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="1080" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="myapps-header" value="My Apps Portal (myapps.microsoft.com)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="1080" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="myapps-user" value="👤 User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="495" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="myapps-app1" value="📧&#xa;Outlook" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="495" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="myapps-app2" value="📊&#xa;CRM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="495" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="myapps-app3" value="📁&#xa;SharePoint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="495" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="myapps-app4" value="💼&#xa;HR App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="495" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="myapps-app5" value="📝&#xa;Wiki" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="495" width="70" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to apps -->
+        <mxCell id="myapps-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="myapps-user" target="myapps-app1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="myapps-conditions" value="Visible if: Assigned + Visible to users = Yes + Has homepage URL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="502" width="370" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

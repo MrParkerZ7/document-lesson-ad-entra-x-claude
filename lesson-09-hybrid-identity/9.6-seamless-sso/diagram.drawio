@@ -1,0 +1,242 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Seamless Single Sign-On" id="sso-diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Seamless Single Sign-On (SSO) - Kerberos Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="15" width="800" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Corporate Network Section -->
+        <mxCell id="corp-zone" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="60" width="500" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="corp-header" value="Corporate Network (On-Premises)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="60" width="500" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Domain-Joined PC -->
+        <mxCell id="pc-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="110" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-label" value="Domain-Joined PC" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="115" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user" value="User (logged in)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="145" width="130" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="browser" value="Browser&#xa;(Edge/Chrome/Firefox)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="195" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kerberos" value="Kerberos Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="250" width="130" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Active Directory -->
+        <mxCell id="ad-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="110" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-label" value="Active Directory" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="115" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dc" value="Domain Controller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="150" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="azureadssoacc" value="AZUREADSSOACC&#xa;Computer Account" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kdc" value="KDC&#xa;(Kerberos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="210" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="secret" value="Kerberos Key&#xa;(Shared Secret)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="210" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Section -->
+        <mxCell id="cloud-zone" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="350" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud-header" value="Microsoft Cloud" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="350" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Entra ID -->
+        <mxCell id="entra" value="Microsoft Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="110" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- SSO Endpoint -->
+        <mxCell id="sso-endpoint" value="autologon.microsoftazuread-sso.com" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="180" width="230" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- M365 Apps -->
+        <mxCell id="m365" value="Microsoft 365 Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Apps -->
+        <mxCell id="saas" value="SaaS Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="240" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Secret shared indicator -->
+        <mxCell id="shared-secret-line" style="curved=1;endArrow=none;strokeColor=#b85450;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="232" as="sourcePoint" />
+            <mxPoint x="655" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shared-label" value="Shared Secret" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="555" y="195" width="70" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Authentication Flow Section -->
+        <mxCell id="flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="370" width="900" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-header" value="Seamless SSO Authentication Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="370" width="900" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Steps -->
+        <mxCell id="step1" value="1. User accesses&#xa;M365 app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" value="2. Redirect to&#xa;Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" value="3. 401 + Kerberos&#xa;challenge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step4" value="4. Request ticket&#xa;from KDC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" value="5. KDC issues&#xa;Kerberos ticket" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step6" value="6. Send ticket&#xa;to Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="step7" value="7. Validate + SSO&#xa;Complete" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#006400;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="420" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Arrows -->
+        <mxCell id="f-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="445" as="sourcePoint" />
+            <mxPoint x="180" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="445" as="sourcePoint" />
+            <mxPoint x="295" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="445" as="sourcePoint" />
+            <mxPoint x="410" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-arrow4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="445" as="sourcePoint" />
+            <mxPoint x="525" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-arrow5" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="635" y="445" as="sourcePoint" />
+            <mxPoint x="640" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-arrow6" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="445" as="sourcePoint" />
+            <mxPoint x="755" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Result note -->
+        <mxCell id="result-note" value="No password prompt required - user authenticated via Kerberos ticket" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#006400;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="485" width="400" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Browser Config Section -->
+        <mxCell id="browser-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="580" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="browser-header" value="Browser Configuration (GPO)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="580" width="420" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ie-edge" value="IE/Edge&#xa;Intranet Zone GPO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="625" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="chrome" value="Chrome&#xa;Registry/ADMX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="625" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="firefox" value="Firefox&#xa;about:config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="625" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="zone-config" value="Intranet Zone: https://autologon.microsoftazuread-sso.com" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="690" width="380" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="safari-note" value="Safari/macOS: Not supported (use Platform SSO)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="140" y="730" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Requirements Section -->
+        <mxCell id="req-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="580" width="460" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="req-header" value="Requirements and Best Practices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="580" width="460" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="req1" value="Domain-joined&#xa;Windows devices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="625" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="req2" value="Corporate network&#xa;(DC access)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="625" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="req3" value="PHS or PTA&#xa;enabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="625" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="req4" value="GPO configured&#xa;for browsers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="625" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="best1" value="Roll over Kerberos key every 30 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="690" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="best2" value="Monitor AZUREADSSOACC account" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="690" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mfa-note" value="Note: Seamless SSO provides first factor only - MFA still applies per Conditional Access policies" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="730" width="400" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

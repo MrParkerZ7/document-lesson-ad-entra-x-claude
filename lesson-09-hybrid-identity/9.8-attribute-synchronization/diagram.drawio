@@ -1,0 +1,251 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Attribute Synchronization" id="attribute-sync-diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Attribute Synchronization Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Source: Active Directory -->
+        <mxCell id="ad-group" value="Active Directory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2E6;strokeColor=#d79b00;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="280" height="380" as="geometry" />
+        </mxCell>
+
+        <!-- AD User Object -->
+        <mxCell id="ad-user" value="User Object" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- AD Attributes -->
+        <mxCell id="ad-attr1" value="userPrincipalName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr2" value="displayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr3" value="mail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="195" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr4" value="department" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="195" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr5" value="objectGUID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr6" value="ms-DS-ConsistencyGuid" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr7" value="extensionAttribute1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="265" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-attr8" value="manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="265" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Source Anchor Box -->
+        <mxCell id="anchor-box" value="Source Anchor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor-text" value="ms-DS-ConsistencyGuid (recommended)&#xa;Immutable link between AD and Entra ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="80" y="335" width="230" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Extension Attributes -->
+        <mxCell id="ext-label" value="Extension Attributes (1-15)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="70" y="395" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-box" value="extensionAttribute1-15&#xa;Custom organization data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="415" width="250" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Azure AD Connect (Sync Engine) -->
+        <mxCell id="sync-group" value="Azure AD Connect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="300" height="380" as="geometry" />
+        </mxCell>
+
+        <!-- Connector Space AD -->
+        <mxCell id="cs-ad" value="Connector Space (AD)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Metaverse -->
+        <mxCell id="metaverse" value="Metaverse&#xa;(Unified View)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=12;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Connector Space AAD -->
+        <mxCell id="cs-aad" value="Connector Space (AAD)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="550" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Inbound Rule -->
+        <mxCell id="inbound-rule" value="Inbound Sync Rules&#xa;(AD to Metaverse)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Outbound Rule -->
+        <mxCell id="outbound-rule" value="Outbound Sync Rules&#xa;(Metaverse to AAD)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="540" y="290" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows in sync engine -->
+        <mxCell id="arrow-cs-in" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" edge="1" parent="1" source="cs-ad" target="inbound-rule">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-in-mv" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" edge="1" parent="1" source="inbound-rule" target="metaverse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-mv-out" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" edge="1" parent="1" source="metaverse" target="outbound-rule">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-out-cs" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" edge="1" parent="1" source="outbound-rule" target="cs-aad">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="280" />
+              <mxPoint x="650" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Transformation Box -->
+        <mxCell id="transform-box" value="Transformations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="350" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="transform1" value="Direct: source -> target" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="375" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="transform2" value="Expression: function()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="375" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="transform3" value="Constant: fixed value" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="410" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="transform4" value="DNComponent: extract" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="410" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Target: Microsoft Entra ID -->
+        <mxCell id="aad-group" value="Microsoft Entra ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="770" y="80" width="280" height="380" as="geometry" />
+        </mxCell>
+
+        <!-- AAD User Object -->
+        <mxCell id="aad-user" value="User Object" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="810" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- AAD Attributes -->
+        <mxCell id="aad-attr1" value="userPrincipalName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="160" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr2" value="displayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="160" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr3" value="mail" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="195" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr4" value="department" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="195" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr5" value="onPremisesImmutableId" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="230" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr6" value="onPremisesSyncEnabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="230" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr7" value="onPremisesExtensionAttributes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="265" width="125" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="aad-attr8" value="manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="265" width="95" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Directory Extensions -->
+        <mxCell id="dir-ext-box" value="Directory Extensions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="790" y="310" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dir-ext-text" value="extension_&lt;appId&gt;_customAttribute&#xa;Custom attributes via app registration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="800" y="335" width="230" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ImmutableId Note -->
+        <mxCell id="immutable-note" value="Source Anchor becomes&#xa;onPremisesImmutableId (Base64)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="400" width="250" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Main Flow Arrows -->
+        <mxCell id="arrow-ad-sync" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;shadow=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="200" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-sync-aad" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;shadow=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="200" as="sourcePoint" />
+            <mxPoint x="770" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Sync Interval -->
+        <mxCell id="sync-interval" value="Sync every 30 min (delta)&#xa;Password sync within 2 min" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-group" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=1;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="80" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="110" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1-text" value="Standard synced attribute" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="107" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="135" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2-text" value="Source anchor / ImmutableId" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="132" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="160" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3-text" value="Extension attribute" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="157" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="185" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4-text" value="Legacy source anchor (objectGUID)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="182" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="210" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5-text" value="Entra ID attribute" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="207" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="235" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6-text" value="AD attribute" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="232" width="150" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Sync Rules Editor Note -->
+        <mxCell id="rules-note" value="Sync Rules Editor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="300" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rules-text" value="Configure attribute mappings:&#xa;&#xa;Precedence: 0-99 (reserved)&#xa;                100-199 (high priority)&#xa;                200-299 (standard)&#xa;&#xa;Lower number = higher priority&#xa;First matching flow wins" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="325" width="260" height="125" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

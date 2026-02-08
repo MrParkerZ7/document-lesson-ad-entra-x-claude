@@ -1,0 +1,319 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="SSO Best Practices" id="sso-best-practices-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="SSO Best Practices Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="500" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Security Best Practices -->
+        <mxCell id="security-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="55" width="370" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="security-header" value="Security Best Practices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="55" width="370" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec1" value="Use SAML/OIDC over&#xa;password-based SSO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="95" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec2" value="Sign SAML response&#xa;AND assertion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="175" y="95" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec3" value="Use SHA-256&#xa;algorithm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="295" y="95" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec4" value="Enable MFA via&#xa;Conditional Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="145" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec5" value="Block legacy&#xa;authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="175" y="145" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec6" value="Require device&#xa;compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="145" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sec7" value="Rotate certificates&#xa;before expiry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="195" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sec8" value="Configure session&#xa;controls" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="175" y="195" width="105" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sec9" value="Monitor sign-in&#xa;logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="195" width="105" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-note" value="OIDC: Use auth code flow + PKCE, avoid implicit flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="240" width="340" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Operations Best Practices -->
+        <mxCell id="ops-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="55" width="370" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-header" value="Operational Excellence" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="55" width="370" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ops1" value="Maintain SSO&#xa;inventory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="95" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops2" value="Document all&#xa;configurations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="555" y="95" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops3" value="Certificate expiry&#xa;calendar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="670" y="95" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops4" value="Quarterly access&#xa;reviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="145" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops5" value="Create&#xa;runbooks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="555" y="145" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops6" value="Monitor and&#xa;alert" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="645" y="145" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops7" value="Audit unused&#xa;apps quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="735" y="145" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ops8" value="Disaster recovery&#xa;procedures" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="195" width="105" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ops9" value="Break-glass&#xa;accounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="195" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ops10" value="Train support&#xa;staff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="195" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ops-note" value="Set certificate expiry alerts 60+ days in advance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="240" width="340" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Planning Best Practices -->
+        <mxCell id="plan-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="55" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="plan-header" value="Planning Guidelines" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="55" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="plan1" value="Inventory all&#xa;applications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="835" y="95" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan2" value="Prioritize by&#xa;business value" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="95" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan3" value="Phased&#xa;rollout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="95" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan4" value="Test in&#xa;non-production" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="835" y="145" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan5" value="User training&#xa;materials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="145" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan6" value="Rollback&#xa;procedures" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="145" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plan7" value="Communication&#xa;plan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="835" y="195" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="plan8" value="Support&#xa;readiness" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="195" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="plan9" value="Go-live&#xa;checklist" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="195" width="90" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="plan-note" value="Pilot with 3-5 apps before full rollout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="835" y="240" width="290" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- SSO Method Priority -->
+        <mxCell id="priority-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="560" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-header" value="SSO Method Selection Priority" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pri1" value="1. OIDC&#xa;(Modern apps)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#006400;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="335" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arr1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="360" as="sourcePoint" />
+            <mxPoint x="185" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri2" value="2. SAML&#xa;(Enterprise)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="190" y="335" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arr2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="360" as="sourcePoint" />
+            <mxPoint x="315" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri3" value="3. Header&#xa;(Legacy+Proxy)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="335" width="95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arr3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="360" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri4" value="4. Password&#xa;(Fallback)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="445" y="335" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arr4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="360" as="sourcePoint" />
+            <mxPoint x="555" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri5" value="5. Linked&#xa;(Redirect)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="500" y="335" width="80" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="priority-arrow" style="endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="395" as="sourcePoint" />
+            <mxPoint x="580" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label" value="High Security                                                    Low Security" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#82b366;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="395" width="250" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Monitoring Section -->
+        <mxCell id="monitor-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="290" width="520" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor-header" value="Monitoring and Alerting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="290" width="520" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mon1" value="SSO failure rate&#xa;> 5%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="335" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mon2" value="Cert expiry&#xa;< 60 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="735" y="335" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mon3" value="Provisioning&#xa;errors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="825" y="335" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mon4" value="High-risk&#xa;sign-ins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="915" y="335" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mon5" value="Unusual&#xa;patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="335" width="75" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kql" value="KQL: SignInLogs | where ResultType != 0 | summarize count() by AppDisplayName" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=8;fontFamily=Courier New;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="385" width="490" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Rollout Phases -->
+        <mxCell id="rollout-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="1100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rollout-header" value="SSO Rollout Phases" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="1100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Rollout Phase Boxes -->
+        <mxCell id="phase1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="460" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1-header" value="Phase 1: Assessment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="460" width="250" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1-item1" value="Inventory applications" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="483" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1-item2" value="Identify SSO capability" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="498" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1-item3" value="Determine priority" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="513" width="130" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phase-arr1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="495" as="sourcePoint" />
+            <mxPoint x="330" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="phase2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="460" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2-header" value="Phase 2: Pilot" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="460" width="250" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2-item1" value="Select 3-5 pilot apps" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="483" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2-item2" value="Small user group" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="498" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2-item3" value="Gather feedback" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="513" width="130" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phase-arr2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="495" as="sourcePoint" />
+            <mxPoint x="610" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="phase3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="460" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="phase3-header" value="Phase 3: Production" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="460" width="250" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3-item1" value="Wave-based deployment" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="620" y="483" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3-item2" value="Start with low-risk apps" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="620" y="498" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3-item3" value="Communication plan" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="620" y="513" width="140" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phase-arr3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="495" as="sourcePoint" />
+            <mxPoint x="890" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="phase4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="460" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="phase4-header" value="Phase 4: Optimization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="895" y="460" width="230" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ph4-item1" value="Monitor performance" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="483" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph4-item2" value="User feedback loop" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="498" width="130" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ph4-item3" value="Continuous improvement" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="513" width="140" height="15" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

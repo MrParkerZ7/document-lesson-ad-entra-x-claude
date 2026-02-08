@@ -1,0 +1,219 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="API Permissions" id="api-permissions-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="API Permissions: Delegated vs Application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Delegated Permissions -->
+        <mxCell id="delegated-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="delegated-header" value="Delegated Permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="360" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="del-desc" value="App acts ON BEHALF OF signed-in user" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="320" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Delegated Flow -->
+        <mxCell id="del-user" value="👤 User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="165" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="del-app" value="📱 App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="165" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="del-api" value="🌐 API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="165" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Delegated arrows -->
+        <mxCell id="del-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="del-user" target="del-app">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="del-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="del-app" target="del-api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="del-char1" value="✅ Requires user sign-in" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="del-char2" value="✅ Limited to user's access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="del-char3" value="✅ User or admin consent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="255" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="del-example" value="Example: User.Read, Mail.Read" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="255" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="del-use" value="Use for: Interactive apps, user-facing features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="320" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Application Permissions -->
+        <mxCell id="app-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="app-header" value="Application Permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="360" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-desc" value="App acts AS ITSELF (no user context)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="120" width="320" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Application Flow -->
+        <mxCell id="app-app" value="🤖 App/Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="165" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="app-api" value="🌐 API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="165" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Application arrow -->
+        <mxCell id="app-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;shadow=0;" edge="1" parent="1" source="app-app" target="app-api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app-direct" value="Direct access" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="155" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-char1" value="⚠️ No user sign-in needed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="220" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="app-char2" value="⚠️ Broad access to resources" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="220" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="app-char3" value="⚠️ Admin consent required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="255" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="app-example" value="Example: User.Read.All" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="255" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="app-use" value="Use for: Daemons, services, background jobs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="290" width="320" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Consent Framework -->
+        <mxCell id="consent-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="consent-header" value="Consent Framework" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="consent-user" value="👤 User Consent&#xa;Low-risk permissions&#xa;User can grant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="120" width="260" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="consent-admin" value="👔 Admin Consent&#xa;Sensitive/app permissions&#xa;Admin must grant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="175" width="260" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="consent-tenant" value="🏢 Tenant-Wide Consent&#xa;Applies to all users&#xa;No individual consent needed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="230" width="260" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="consent-grant" value="Grant: API permissions → Grant admin consent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="285" width="260" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Common Permissions Table -->
+        <mxCell id="perm-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="1080" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-header" value="Common Microsoft Graph Permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="1080" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Low Risk -->
+        <mxCell id="perm-low" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-low-header" value="Low Risk (User Consent)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-low-list" value="User.Read - Read own profile&#xa;openid, profile, email&#xa;offline_access - Refresh tokens" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="410" width="230" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Moderate Risk -->
+        <mxCell id="perm-mod" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="380" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-mod-header" value="Moderate Risk (User/Admin)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="380" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-mod-list" value="Mail.Read - Read user mail&#xa;Calendars.ReadWrite - Calendar access&#xa;Files.Read - Read user files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="410" width="230" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- High Risk -->
+        <mxCell id="perm-high" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-high-header" value="High Risk (Admin Only)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-high-list" value="Directory.Read.All - Read all directory&#xa;User.Read.All - Read all users&#xa;Mail.Read (App) - Read all mailboxes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="410" width="230" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Admin Risk -->
+        <mxCell id="perm-admin" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="380" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-admin-header" value="Administrative" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="380" width="230" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="perm-admin-list" value="Application.ReadWrite.All&#xa;User.ReadWrite.All&#xa;Directory.ReadWrite.All" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;align=left;spacingLeft=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="410" width="210" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Best Practice -->
+        <mxCell id="bp-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="1080" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bp-header" value="Principle of Least Privilege" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="1080" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bp1" value="✅ Request minimum needed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bp2" value="✅ Use delegated when possible" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="540" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bp3" value="✅ Document justification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="540" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bp4" value="✅ Review regularly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="540" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bp5" value="❌ Avoid .All unless required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="540" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bp6" value="❌ No &quot;just in case&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="540" width="150" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

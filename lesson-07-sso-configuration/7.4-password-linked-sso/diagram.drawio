@@ -1,0 +1,283 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Password and Linked SSO" id="password-linked-sso-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Password-Based and Linked SSO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="500" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Password-Based SSO Flow -->
+        <mxCell id="pwd-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="680" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-header" value="Password-Based SSO Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="680" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Password SSO Actors -->
+        <mxCell id="pwd-user" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-myapps" value="My Apps&#xa;Portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="105" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-extension" value="Browser&#xa;Extension" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="105" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-entra" value="Entra ID&#xa;Credential Store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="105" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-app" value="Legacy&#xa;Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="590" y="105" width="90" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Password SSO Flow Arrows -->
+        <mxCell id="pwd-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="pwd-user" target="pwd-myapps">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwd-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="pwd-myapps" target="pwd-extension">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwd-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="pwd-extension" target="pwd-entra">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwd-arrow4" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="pwd-entra" target="pwd-extension">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwd-arrow5" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="pwd-extension" target="pwd-app">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Password SSO Labels -->
+        <mxCell id="pwd-label1" value="1. Click app" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="95" width="60" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-label2" value="2. Launch" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="95" width="50" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-label3" value="3. Get creds" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="100" width="55" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-label4" value="4. Return creds" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="385" y="158" width="75" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-label5" value="5. Auto-fill &amp; submit" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="160" width="95" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Password SSO Details -->
+        <mxCell id="pwd-details" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="175" width="640" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-req1" value="Requirement:&#xa;Browser Extension" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="185" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-mode1" value="Individual&#xa;Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="175" y="185" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-mode2" value="Admin&#xa;Assigned" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="265" y="185" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-mode3" value="Group&#xa;Shared" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="185" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-note" value="Use when app doesn't support SAML/OIDC federation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Linked SSO Flow -->
+        <mxCell id="linked-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="60" width="400" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-header" value="Linked SSO Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="60" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Linked SSO Actors -->
+        <mxCell id="linked-user" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="110" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-myapps" value="My Apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="870" y="110" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-ext" value="External&#xa;IdP/Portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="990" y="105" width="80" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Linked SSO Arrows -->
+        <mxCell id="linked-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;" edge="1" parent="1" source="linked-user" target="linked-myapps">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="linked-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="linked-myapps" target="linked-ext">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="linked-label1" value="1. Click app tile" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#0078D4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="100" width="75" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-label2" value="2. Redirect to external URL" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="100" width="130" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Linked SSO Details -->
+        <mxCell id="linked-details" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="175" width="360" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-note1" value="No SSO - just a redirect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="185" width="125" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-note2" value="No extension required" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="905" y="185" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-use" value="Use for: External IdP, partner portals, apps with own auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=2;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="220" width="340" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Comparison Section -->
+        <mxCell id="compare-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="540" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="compare-header" value="Comparison: Password vs Linked SSO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="540" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Password Column -->
+        <mxCell id="pwd-col" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="320" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-col-header" value="Password-Based SSO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="320" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-item1" value="+ Centralized credential storage" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="345" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-item2" value="+ Automatic login (no typing)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-item3" value="+ Audit trail for credential access" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="375" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-item4" value="- Requires browser extension" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="395" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pwd-item5" value="- Complex login pages may fail" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="410" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Linked Column -->
+        <mxCell id="linked-col" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="320" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-col-header" value="Linked SSO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="320" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-item1" value="+ No extension required" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="345" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-item2" value="+ Simple configuration" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-item3" value="+ Works with any app URL" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="375" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-item4" value="- No actual SSO (just redirect)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="395" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="linked-item5" value="- No credential management" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;spacingLeft=5;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="410" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Best Practice -->
+        <mxCell id="best-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="540" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="best-header" value="Best Practices" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="540" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bp1" value="Prefer SAML/OIDC when available" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="325" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bp2" value="Use individual credentials&#xa;over shared accounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="325" width="140" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bp3" value="Enforce MFA for&#xa;My Apps access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="940" y="325" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="bp4" value="Plan migration path&#xa;to federated SSO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="325" width="100" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="priority" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="375" width="500" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-label" value="SSO Method Priority:" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="380" width="120" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pri1" value="1. SAML/OIDC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="630" y="400" width="90" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="414" as="sourcePoint" />
+            <mxPoint x="745" y="414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri2" value="2. Header-based" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="750" y="400" width="100" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="855" y="414" as="sourcePoint" />
+            <mxPoint x="875" y="414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri3" value="3. Password" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="400" width="80" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="414" as="sourcePoint" />
+            <mxPoint x="985" y="414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pri4" value="4. Linked" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="990" y="400" width="70" height="28" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

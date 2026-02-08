@@ -1,0 +1,219 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="OAuth OIDC Flows" id="oauth-oidc-flows-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="OAuth 2.0 and OpenID Connect Flows" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="15" width="600" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Authorization Code Flow -->
+        <mxCell id="auth-code-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="560" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-code-header" value="Authorization Code Flow (Web Apps)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Actors -->
+        <mxCell id="ac-user" value="👤&#xa;User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-browser" value="🌐&#xa;Browser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="55" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-app" value="📱&#xa;Web App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="110" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-entra" value="🔐&#xa;Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-api" value="🌐&#xa;API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="55" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Flow steps -->
+        <mxCell id="ac-step1" value="1. Login Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="175" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-step2" value="2. Redirect to /authorize" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="175" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-step3" value="3. User authenticates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="175" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ac-step4" value="4. Redirect with code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-step5" value="5. POST /token (code + secret)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="210" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-step6" value="6. Tokens returned" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="210" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ac-step7" value="7. Call API with access token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="245" width="300" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ac-step8" value="8. API Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="245" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ac-note" value="✅ Best for: Server-side web apps with secret storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="285" width="520" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Client Credentials Flow -->
+        <mxCell id="cc-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="340" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-header" value="Client Credentials Flow (Services)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Actors -->
+        <mxCell id="cc-service" value="🤖&#xa;Service/Daemon" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="110" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-entra" value="🔐&#xa;Entra ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="110" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-api" value="🌐&#xa;API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="110" width="55" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Flow steps -->
+        <mxCell id="cc-step1" value="1. POST /token&#xa;(client_id + secret)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="180" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-step2" value="2. Access Token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="180" width="110" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cc-step3" value="3. Call API with token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="235" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-step4" value="4. Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="235" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cc-note1" value="⚠️ No user context - app-only access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="270" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cc-note2" value="✅ Best for: Daemons, background jobs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="295" width="290" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- PKCE Enhancement -->
+        <mxCell id="pkce-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="560" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pkce-header" value="PKCE Enhancement (SPAs, Mobile Apps)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pkce-desc" value="Proof Key for Code Exchange - Protects public clients" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="520" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pkce-step1" value="1. Generate random&#xa;code_verifier" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="425" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pkce-step2" value="2. Create code_challenge&#xa;= SHA256(verifier)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="425" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pkce-step3" value="3. Send challenge&#xa;in /authorize" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="425" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pkce-step4" value="4. Send verifier&#xa;in /token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="425" width="110" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- PKCE arrows -->
+        <mxCell id="pkce-arrow1" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="pkce-step1" target="pkce-step2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pkce-arrow2" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="pkce-step2" target="pkce-step3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pkce-arrow3" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;shadow=0;" edge="1" parent="1" source="pkce-step3" target="pkce-step4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="pkce-benefit" value="✅ Server verifies: SHA256(verifier) == challenge → No secret needed!" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="520" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Device Code Flow -->
+        <mxCell id="device-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="340" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="device-header" value="Device Code Flow (CLI, IoT)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="device-step1" value="1. Request device code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="390" width="130" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="device-step2" value="2. Display: &quot;Go to URL,&#xa;enter code ABC123&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="385" width="160" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="device-step3" value="3. User signs in on phone/PC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="425" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="device-step4" value="4. Device polls, gets token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="425" width="130" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="device-note" value="✅ Best for: CLI tools, smart TVs, IoT devices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="465" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Selection Guide -->
+        <mxCell id="guide-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="guide-header" value="Flow Selection Guide" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d6b656;strokeColor=#d6b656;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="920" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="guide1" value="Web App → Auth Code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="guide2" value="SPA → Auth Code + PKCE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="570" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="guide3" value="Mobile → Auth Code + PKCE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="570" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="guide4" value="Service → Client Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="570" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="guide5" value="CLI → Device Code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="570" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="guide6" value="❌ Implicit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="570" width="100" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

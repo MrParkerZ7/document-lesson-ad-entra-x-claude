@@ -1,0 +1,312 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Audit Logs Overview" id="audit-logs-overview">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Microsoft Entra ID - Audit Logs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Categories Container -->
+        <mxCell id="categories-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="700" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="categories-title" value="Audit Log Categories" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="700" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Category Items - Row 1 -->
+        <mxCell id="cat-user" value="UserManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-user-items" value="- Add/Delete user&#xa;- Update user&#xa;- Password changes&#xa;- License changes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-group" value="GroupManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-group-items" value="- Add/Delete group&#xa;- Add/Remove members&#xa;- Add/Remove owners&#xa;- Update group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-app" value="ApplicationManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-app-items" value="- Add/Delete app&#xa;- Update app&#xa;- Consent grants&#xa;- Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="170" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-role" value="RoleManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="130" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-role-items" value="- Add to role&#xa;- Remove from role&#xa;- PIM activations&#xa;- Role updates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="170" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-policy" value="Policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="130" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-policy-items" value="- CA policies&#xa;- Auth methods&#xa;- Named locations&#xa;- Settings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="170" width="100" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Category Items - Row 2 -->
+        <mxCell id="cat-directory" value="DirectoryManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-directory-items" value="- Tenant settings&#xa;- Domain changes&#xa;- Branding&#xa;- Properties" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-auth" value="Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-auth-items" value="- Register MFA&#xa;- Update security info&#xa;- Delete methods&#xa;- FIDO2 keys" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-device" value="DeviceManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-device-items" value="- Register device&#xa;- Delete device&#xa;- Update device&#xa;- Enable/Disable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-b2b" value="B2BManagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-b2b-items" value="- Invite external user&#xa;- Redeem invitation&#xa;- Delete guest&#xa;- Update guest" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cat-provision" value="Provisioning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="260" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-provision-items" value="- Configure sync&#xa;- Update mapping&#xa;- Provision user&#xa;- Sync errors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="300" width="100" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Key Fields Container -->
+        <mxCell id="fields-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="80" width="420" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="fields-title" value="Key Audit Log Fields" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="820" y="90" width="420" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Field Items -->
+        <mxCell id="field-date" value="Date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="125" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="field-service" value="Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="125" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="field-category" value="Category" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="125" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="field-activity" value="Activity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="125" width="60" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="field-status" value="Status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="125" width="60" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Actor and Target Section -->
+        <mxCell id="actor-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="165" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-title" value="Initiated By (Actor)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="840" y="170" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-user" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="855" y="195" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-app" value="App/SP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="195" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-system" value="System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="855" y="225" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-delegated" value="Delegated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="935" y="225" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="target-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="165" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="target-title" value="Target(s)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="170" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="target-user" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="195" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="target-group" value="Group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="195" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="target-app" value="App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="225" width="70" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="target-role" value="Role" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="225" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- High Priority Events Container -->
+        <mxCell id="priority-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="300" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-title" value="High-Priority Security Events" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="820" y="305" width="420" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pri-role" value="Add member&#xa;to role" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="340" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-consent" value="Consent to&#xa;application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="925" y="340" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-ca" value="Update CA&#xa;policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="340" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-creds" value="Add app&#xa;credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="340" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-pwd" value="Reset user&#xa;password" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="390" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-delete" value="Delete&#xa;user" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="925" y="390" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-disable" value="Disable&#xa;account" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="390" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pri-oauth" value="OAuth2&#xa;grant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=9;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="390" width="75" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Use Cases Container -->
+        <mxCell id="usecases-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="450" width="500" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="usecases-title" value="Audit Log Use Cases" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="500" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Use Case Items -->
+        <mxCell id="uc-security" value="Security Investigation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#6d9b51;fontColor=#ffffff;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-security-items" value="- Track password changes&#xa;- MFA method modifications&#xa;- Role assignment changes&#xa;- Suspicious consent grants" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="535" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-compliance" value="Compliance Reporting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#6d9b51;fontColor=#ffffff;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="500" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-compliance-items" value="- Privileged access review&#xa;- User lifecycle audit&#xa;- Access certification&#xa;- Policy change history" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="535" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-change" value="Change Tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#6d9b51;fontColor=#ffffff;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="500" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-change-items" value="- Group membership&#xa;- Application changes&#xa;- Settings modifications&#xa;- Device registrations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="535" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-governance" value="App Governance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#6d9b51;fontColor=#ffffff;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="620" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-governance-items" value="- Monitor consent activity&#xa;- Track permission grants&#xa;- Identify risky apps&#xa;- Review OAuth scopes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="655" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-troubleshoot" value="Troubleshooting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82b366;strokeColor=#6d9b51;fontColor=#ffffff;fontSize=11;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-troubleshoot-items" value="- Find who made changes&#xa;- Trace configuration issues&#xa;- Identify sync problems&#xa;- Review error patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="655" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Filter Examples Container -->
+        <mxCell id="filter-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="450" width="620" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-title" value="Common Filter Scenarios" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="620" y="460" width="620" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Filter Scenario Items -->
+        <mxCell id="filter-roles" value="Role Changes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#7d5f8c;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="500" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-roles-detail" value="Category: RoleManagement&#xa;Activity: Add member to role" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="530" width="140" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="filter-users" value="User Deletions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#7d5f8c;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="500" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-users-detail" value="Category: UserManagement&#xa;Activity: Delete user" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="530" width="140" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="filter-consent" value="App Consents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#7d5f8c;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="960" y="500" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-consent-detail" value="Category: ApplicationMgmt&#xa;Activity: Consent to app" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="960" y="530" width="140" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="filter-policy" value="Policy Changes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9673a6;strokeColor=#7d5f8c;fontColor=#ffffff;fontSize=10;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="500" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-policy-detail" value="Category: Policy&#xa;Activity: *conditional*" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=5;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="530" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Data Flow Arrow -->
+        <mxCell id="flow-arrow" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;shadow=0;" edge="1" parent="1" source="categories-container" target="usecases-container">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="435" />
+              <mxPoint x="330" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Retention Box -->
+        <mxCell id="retention-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="retention-title" value="Retention and Export" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="610" width="580" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ret-free" value="Free: 7 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="645" width="85" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-premium" value="P1/P2: 30 days" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="755" y="645" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-la" value="Log Analytics: 2 years" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="855" y="645" width="115" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-storage" value="Storage: Unlimited" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="645" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-eh" value="Event Hubs: Stream" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="645" width="110" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ret-note" value="Best Practice: Export to Log Analytics for 90+ days (security) or Storage Account for compliance requirements" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="660" y="695" width="540" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

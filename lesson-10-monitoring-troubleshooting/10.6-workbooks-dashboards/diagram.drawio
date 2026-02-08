@@ -1,0 +1,260 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Mozilla/5.0" version="22.1.0" type="device">
+  <diagram name="Workbooks and Dashboards Architecture" id="workbooks-dashboards-arch">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Microsoft Entra ID - Workbooks &amp; Dashboards Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Data Sources -->
+        <mxCell id="sources-group" value="Data Sources" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="180" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="source-signin" value="SigninLogs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="source-audit" value="AuditLogs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="source-risk" value="UserRiskEvents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="source-prov" value="ProvisioningLogs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Workbooks Engine -->
+        <mxCell id="workbooks-engine" value="Azure Workbooks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;fontColor=#ffffff;fontSize=14;fontStyle=1;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="150" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from sources to workbooks -->
+        <mxCell id="arrow-sources-wb" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#0078D4;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="sources-group" target="workbooks-engine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Built-in Workbooks -->
+        <mxCell id="builtin-group" value="Built-in Workbooks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="200" height="240" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-signins" value="Sign-ins" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="115" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-usage" value="Usage &amp; Insights" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="645" y="115" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-ca" value="CA Insights" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="155" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-auth" value="Auth Methods" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="645" y="155" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-sensitive" value="Sensitive Ops" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="195" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-crossten" value="Cross-tenant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="645" y="195" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-diag" value="Sign-in Diagnostics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="235" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-prov" value="Provisioning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="645" y="235" width="75" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wb-custom" value="+ Custom Workbooks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from engine to built-in -->
+        <mxCell id="arrow-engine-builtin" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="workbooks-engine" target="builtin-group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Workbook Components -->
+        <mxCell id="components-group" value="Workbook Components" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="140" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-params" value="Parameters" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="315" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-queries" value="KQL Queries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="350" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-viz" value="Visualizations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="385" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comp-text" value="Text &amp; Markdown" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from engine to components -->
+        <mxCell id="arrow-engine-comp" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#9673a6;strokeWidth=3;exitX=0.5;exitY=1;entryX=0.5;entryY=0;shadow=0;" edge="1" parent="1" source="workbooks-engine" target="components-group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Visualizations Detail -->
+        <mxCell id="viz-group" value="Visualization Types" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="180" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-table" value="Tables" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="375" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-chart" value="Bar Charts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="155" y="375" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-time" value="Time Charts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="410" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-pie" value="Pie Charts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="155" y="410" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-tile" value="Metric Tiles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="445" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="viz-map" value="Maps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="155" y="445" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Consumers -->
+        <mxCell id="consumers-title" value="Consumers &amp; Sharing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Security Team -->
+        <mxCell id="security-team" value="Security Operations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-invest" value="Incident Investigation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="150" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-threat" value="Threat Hunting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="175" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- IT Operations -->
+        <mxCell id="it-ops" value="IT Operations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="800" y="210" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="it-monitor" value="Health Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="240" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="it-trouble" value="Troubleshooting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="265" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Management -->
+        <mxCell id="management" value="Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="800" y="300" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mgmt-reports" value="Executive Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="330" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mgmt-compliance" value="Compliance Evidence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="355" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to consumers -->
+        <mxCell id="arrow-builtin-sec" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#b85450;strokeWidth=2;exitX=1;exitY=0.2;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="builtin-group" target="security-team">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow-builtin-it" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#6c8ebf;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="builtin-group" target="it-ops">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow-builtin-mgmt" style="curved=1;endArrow=blockThin;endFill=1;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=0.8;entryX=0;entryY=0.5;shadow=0;" edge="1" parent="1" source="builtin-group" target="management">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Export Options -->
+        <mxCell id="export-group" value="Export &amp; Integration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=12;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="540" y="350" width="200" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="export-arm" value="ARM Template Export" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="385" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="export-powerbi" value="Power BI Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="420" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="export-dashboard" value="Pin to Azure Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="455" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Sample Sign-ins Workbook Preview -->
+        <mxCell id="preview-group" value="Sign-ins Workbook Preview" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="120" width="200" height="260" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview-header" value="Sign-ins Overview" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#005A9E;strokeWidth=2;shadow=1;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="150" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview-metrics" value="Total: 125K | Failed: 2.3K | Rate: 98.2%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="185" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview-chart" value="[Time Chart: Sign-in Trends]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=9;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="220" width="160" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview-map" value="[Map: Geographic Distribution]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=9;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="275" width="160" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview-table" value="[Table: Top Failed Users]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=9;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="330" width="160" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Access Control -->
+        <mxCell id="access-group" value="Access Control" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=11;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="access-personal" value="My Workbooks (Personal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="435" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="access-shared" value="Shared Workbooks (Team)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="465" width="160" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
